@@ -3,16 +3,13 @@ Panoramic's Templates feature will be segmented and packaged along four key dime
 
 Below is an outline of the existing schema:
 
-I. CONNECTOR API
-  - facebook_ad_insights
+I. CONNECTOR API (ex. FACEBOOK_AD_INSIGHTS)
 
-II. ETL VENDOR
-  - FiveTran
+II. ETL VENDOR (ex. Fivetran)
 
-III. DATA WAREHOUSE
-  - Snowflake
+III. DATA WAREHOUSE (ex. Snowflake)
 
-IV. FILE TYPE
+IV. TEMPLATE COMPONENTS
   - ETL_DEFINITION
   - SQL
   - YAML
