@@ -1,0 +1,19 @@
+{
+    "service": "facebook",
+    "group_id": "group_id",
+    "config": {
+        "schema": "facebook",
+        "table": "facebook",
+        "accounts": [],
+        "fields": [],
+        "breakdowns": [],
+        "action_breakdowns": [],
+        "sync_mode": "sync_mode",
+        "aggregation": "aggregation",
+        "config_type": "config_type",
+        "prebuilt_report": "prebuilt_report",
+        "action_report_time": "impression",
+        "click_attribution_window": "click_attribution_window",
+        "view_attribution_window": "view_attribution_window"
+    }
+}
