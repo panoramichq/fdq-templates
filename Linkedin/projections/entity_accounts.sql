@@ -1,0 +1,34 @@
+CREATE OR REPLACE VIEW "LINKEDIN_VIEWS"."ENTITY_ACCOUNTS" AS 
+
+SELECT
+
+    ID
+    , NAME
+    , PLATFORM_CREATED_AT
+    , PLATFORM_UPDATED_AT
+    , PROCESSED_AT
+    , REFERENCE
+    , CURRENCY
+    , STATUS
+    , TYPE
+
+FROM (
+
+  SELECT
+
+      ID::VARCHAR                             AS ID
+      , NAME::VARCHAR                         AS NAME
+      , CREATED_TIME::TIMESTAMP_TZ            AS PLATFORM_CREATED_AT
+      , LAST_MODIFIED_TIME::TIMESTAMP_TZ      AS PLATFORM_UPDATED_AT
+      , _FIVETRAN_SYNCED                      AS PROCESSED_AT
+      , REFERENCE::VARCHAR                    AS REFERENCE
+      , CURRENCY::VARCHAR                     AS CURRENCY
+      , STATUS::VARCHAR                       AS STATUS
+      , TYPE::VARCHAR                         AS TYPE
+      , ROW_NUMBER() OVER (PARTITION BY ID ORDER BY _FIVETRAN_SYNCED DESC) AS ROW_NUM
+
+  FROM "LINKEDIN_ADS"."ACCOUNT_HISTORY"
+
+)
+WHERE ROW_NUM = 1
+;
