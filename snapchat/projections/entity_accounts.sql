@@ -1,0 +1,31 @@
+CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_ACCOUNTS" AS
+
+SELECT 
+    ENTITY_ID
+    , ADVERTISER_ORGANIZATION_ID
+    , CURRENCY
+    , __LIFETIME_SPEND_CAP_MICRO_MICRODOLLARS -- max value 350,000,000,000, min value 1,000,000,000
+    , NAME
+    , STATUS
+    , TIMEZONE
+    , TYPE
+FROM (
+
+  SELECT ID::VARCHAR(256)             AS ENTITY_ID 
+      , ORGANIZATION_ID               AS ADVERTISER_ORGANIZATION_ID
+      ,  ADVERTISER                   AS ADVERTISER
+      , CURRENCY                      AS CURRENCY
+      , NAME                          AS NAME
+      , STATUS                        AS STATUS
+      , TYPE                          AS TYPE
+      , CREATED_AT                    as CREATED_AT
+      , UPDATED_AT                    AS UPDATED_AT
+      , TIMEZONE                      AS TIMEZONE
+      , LIFETIME_SPEND_CAP_MICRO      AS __LIFETIME_SPEND_CAP_MICRO_MICRODOLLARS
+      , _FIVETRAN_SYNCED
+      , ROW_NUMBER() OVER (PARTITION BY ID ORDER BY _FIVETRAN_SYNCED DESC) AS ROW_NUM
+  FROM "SNAPCHAT_ADS"."AD_ACCOUNT_HISTORY"
+
+)
+WHERE ROW_NUM = 1
+;
