@@ -1,7 +1,7 @@
 CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."METRIC_AD_SQUADS_HOURLY" AS
 SELECT 
 
-  AD_SQUAD_ID::VARCHAR(256)                                   AS AD_SQUAD_ID
+  AD_SQUAD_ID::VARCHAR(256)                             AS AD_SQUAD_ID
   , DATE::TIMESTAMP_TZ(9)                               AS DATE
   , IMPRESSIONS::NUMBER(38,0)                           AS IMPRESSIONS
   , SWIPES::NUMBER(38,0)                                AS SWIPES

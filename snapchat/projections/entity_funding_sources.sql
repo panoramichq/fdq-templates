@@ -2,7 +2,7 @@ CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_FUNDING_SOURCES" AS
 
 SELECT 
 
-      ID
+      FUNDING_SOURCE_ID
       , UPDATED_AT
       , ORGANIZATION_ID
       , CREATED_AT
@@ -19,15 +19,15 @@ SELECT
       , CURRENCY
       , DAILY_SPEND_LIMIT_CURRENCY
       , CARD_TYPE
-      , NAME
+      , FUNDING_SOURCE_NAME
       , EMAIL
-      , TYPE
+      , FUNDING_SOURCE_TYPE
       , LAST_4_DIGITS_OF_CARD
 
 FROM (
 
   SELECT 
-      ID::VARCHAR(256)                              AS ID
+      ID::VARCHAR(256)                              AS FUNDING_SOURCE_ID
       , UPDATED_AT::TIMESTAMP_TZ(9)                 AS UPDATED_AT
       , ORGANIZATION_ID::VARCHAR(256)               AS ORGANIZATION_ID
       , CREATED_AT::TIMESTAMP_TZ(9)                 AS CREATED_AT
@@ -44,9 +44,9 @@ FROM (
       , CURRENCY::VARCHAR(256)                      AS CURRENCY
       , DAILY_SPEND_LIMIT_CURRENCY::VARCHAR(256)    AS DAILY_SPEND_LIMIT_CURRENCY
       , CARD_TYPE::VARCHAR(256)                     AS CARD_TYPE
-      , NAME::VARCHAR(256)                          AS NAME
+      , NAME::VARCHAR(256)                          AS FUNDING_SOURCE_NAME
       , EMAIL::VARCHAR(256)                         AS EMAIL
-      , TYPE::VARCHAR(256)                          AS TYPE
+      , TYPE::VARCHAR(256)                          AS FUNDING_SOURCE_TYPE
       , LAST_4_DIGITS_OF_CARD::NUMBER(38,0)         AS LAST_4_DIGITS_OF_CARD
       , _FIVETRAN_SYNCED::TIMESTAMP_TZ(9)
       , ROW_NUMBER() OVER (PARTITION BY ID ORDER BY _FIVETRAN_SYNCED DESC) AS ROW_NUM

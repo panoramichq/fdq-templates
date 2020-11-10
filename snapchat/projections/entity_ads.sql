@@ -1,27 +1,27 @@
 CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_ADS" AS
 
 SELECT 
-    ID
+    AD_ID
     , AD_SQUAD_ID
     , CREATIVE_ID
     , CREATED_AT
     , UPDATED_AT
-    , NAME
+    , AD_NAME
     , REVIEW_STATUS
     , STATUS
-    , TYPE
+    , AD_TYPE
     , REVIEW_STATUS_REASONS
 FROM (
 
   SELECT 
-    ID::VARCHAR(256)                        AS ID
+    ID::VARCHAR(256)                        AS AD_ID
     , AD_SQUAD_ID::VARCHAR(256)             AS AD_SQUAD_ID
     , CREATIVE_ID::VARCHAR(256)             AS CREATIVE_ID
-    , NAME::VARCHAR(256)                    AS NAME
+    , NAME::VARCHAR(256)                    AS AD_NAME
     , REVIEW_STATUS::VARCHAR(256)           AS REVIEW_STATUS
     , REVIEW_STATUS_REASON::VARCHAR(256)    AS REVIEW_STATUS_REASONS
     , STATUS::VARCHAR(256)                  AS STATUS
-    , TYPE::VARCHAR(256)                    AS TYPE
+    , TYPE::VARCHAR(256)                    AS AD_TYPE
     , CREATED_AT::TIMESTAMP_TZ(9)           AS CREATED_AT
     , UPDATED_AT::TIMESTAMP_TZ(9)           AS UPDATED_AT
     , _FIVETRAN_SYNCED::TIMESTAMP_TZ(9)

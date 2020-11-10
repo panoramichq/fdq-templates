@@ -2,15 +2,15 @@ CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_CREATIVES" AS
 
 SELECT 
 
-      ID
+      CREATIVE_ID
       , AD_ACCOUNT_ID
       , SHAREABLE
       , ATTACHMENT_TYPE
       , CALL_TO_ACTION
-      , NAME
+      , CREATIVE_NAME
       , PACKAGING_STATUS
       , REVIEW_STATUS
-      , TYPE
+      , CREATIVE_TYPE
       , PREVIEW_CREATIVE_ID
       , PLAYBACK_TYPE
       , TOP_SNAP_MEDIA_ID
@@ -38,17 +38,17 @@ SELECT
 FROM (
 
   SELECT 
-      ID::VARCHAR(256)                                  AS ID
+      ID::VARCHAR(256)                                  AS CREATIVE_ID
       , UPDATED_AT::TIMESTAMP_TZ(9)                     AS UPDATED_AT
       , AD_ACCOUNT_ID::VARCHAR(256)                     AS AD_ACCOUNT_ID
       , CREATED_AT::TIMESTAMP_TZ(9)                     AS CREATED_AT
       , SHAREABLE::BOOLEAN                              AS SHAREABLE
       , ATTACHMENT_TYPE::VARCHAR(256)                   AS ATTACHMENT_TYPE
       , CALL_TO_ACTION::VARCHAR(256)                    AS CALL_TO_ACTION
-      , NAME::VARCHAR(256)                              AS NAME
+      , NAME::VARCHAR(256)                              AS CREATIVE_NAME
       , PACKAGING_STATUS::VARCHAR(256)                  AS PACKAGING_STATUS
       , REVIEW_STATUS::VARCHAR(256)                     AS REVIEW_STATUS
-      , TYPE::VARCHAR(256)                              AS TYPE
+      , TYPE::VARCHAR(256)                              AS CREATIVE_TYPE
       , PREVIEW_CREATIVE_ID::VARCHAR(256)               AS PREVIEW_CREATIVE_ID
       , PLAYBACK_TYPE::VARCHAR(256)                     AS PLAYBACK_TYPE
       , TOP_SNAP_MEDIA_ID::VARCHAR(256)                 AS TOP_SNAP_MEDIA_ID

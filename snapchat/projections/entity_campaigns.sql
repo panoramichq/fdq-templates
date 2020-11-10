@@ -2,9 +2,9 @@ CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_CAMPAIGNS" AS
 
 SELECT 
 
-    ID
+    CAMPAIGN_ID
     , AD_ACCOUNT_ID
-    , NAME
+    , CAMPAIGN_NAME
     , OBJECTIVE
     , STATUS
     , DAILY_BUDGET_MICRO
@@ -19,10 +19,10 @@ SELECT
 FROM (
 
   SELECT 
-      ID::VARCHAR(256)                                  AS ID
+      ID::VARCHAR(256)                                  AS CAMPAIGN_ID
       , UPDATED_AT::TIMESTAMP_TZ(9)                     AS UPDATED_AT
       , AD_ACCOUNT_ID::VARCHAR(256)                     AS AD_ACCOUNT_ID
-      , NAME::VARCHAR(256)                              AS NAME
+      , NAME::VARCHAR(256)                              AS CAMPAIGN_NAME
       , STATUS::VARCHAR(256)                            AS STATUS
       , DAILY_BUDGET_MICRO::NUMBER(38,0)                AS DAILY_BUDGET_MICRO
       , LIFETIME_SPEND_CAP_MICRO::NUMBER(38,0)          AS LIFETIME_SPEND_CAP_MICRO

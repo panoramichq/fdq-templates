@@ -1,23 +1,23 @@
 CREATE OR REPLACE VIEW "SNAPCHAT_VIEWS"."ENTITY_ACCOUNTS" AS
 
 SELECT 
-    ENTITY_ID
+    AD_ACCOUNT_ID
     , ADVERTISER_ORGANIZATION_ID
     , CURRENCY
     , __LIFETIME_SPEND_CAP_MICRO_MICRODOLLARS -- max value 350,000,000,000, min value 1,000,000,000
-    , NAME
-    , STATUS
+    , ACCOUNT_NAME
+    , ACCOUNT_STATUS
     , TIMEZONE
-    , TYPE
+    , ACCOUNT_TYPE
 FROM (
 
-  SELECT ID::VARCHAR(256)             AS ENTITY_ID 
+  SELECT ID::VARCHAR(256)             AS AD_ACCOUNT_ID 
       , ORGANIZATION_ID               AS ADVERTISER_ORGANIZATION_ID
       ,  ADVERTISER                   AS ADVERTISER
       , CURRENCY                      AS CURRENCY
-      , NAME                          AS NAME
-      , STATUS                        AS STATUS
-      , TYPE                          AS TYPE
+      , NAME                          AS ACCOUNT_NAME
+      , STATUS                        AS ACCOUNT_STATUS
+      , TYPE                          AS ACCOUNT_TYPE
       , CREATED_AT                    as CREATED_AT
       , UPDATED_AT                    AS UPDATED_AT
       , TIMEZONE                      AS TIMEZONE
