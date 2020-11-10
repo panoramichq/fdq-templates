@@ -7,7 +7,7 @@ FROM (SELECT *,
              ROW_NUMBER() OVER (PARTITION BY
                ACCOUNT_ID,
                CAMPAIGN_ID
-               ORDER BY DATE DESC) ___R
+               ORDER BY _FIVETRAN_SYNCED DESC) ___R
       FROM "DOUBLE_CLICK_CAMPAIGN_MANAGER"."GENERAL_METRICS_MAIN_ACCOUNT"
      ) DT
 where DT.___R = 1;
