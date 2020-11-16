@@ -3,22 +3,22 @@ CREATE OR REPLACE VIEW "ADWORDS_VIEWS"."METRIC_AD_GROUPS_DAILY_BY_GEO" AS
 SELECT
 
   DATE::DATE                                            AS DATE
-  , CUSTOMER_ID::NUMBER(38,0)                           AS CUSTOMER_ID
+  , CUSTOMER_ID::VARCHAR                                AS CUSTOMER_ID
   , ACCOUNT_TIME_ZONE::VARCHAR(256)                     AS ACCOUNT_TIME_ZONE
   , ACCOUNT_CURRENCY_CODE::VARCHAR(256)                 AS ACCOUNT_CURRENCY_CODE
 --  , BASE_CAMPAIGN_ID::NUMBER(38,0)                      AS BASE_CAMPAIGN_ID
-  , CAMPAIGN_ID::NUMBER(38,0)                           AS CAMPAIGN_ID
+  , CAMPAIGN_ID::VARCHAR                                AS CAMPAIGN_ID
 --  , BIDDING_STRATEGY_ID::NUMBER(38,0)                   AS BIDDING_STRATEGY_ID
 --  , BASE_AD_GROUP_ID::NUMBER(38,0)                      AS BASE_AD_GROUP_ID
-  , AD_GROUP_ID::NUMBER(38,0)                           AS AD_GROUP_ID
+  , AD_GROUP_ID::VARCHAR                                AS AD_GROUP_ID
   , AD_NETWORK_TYPE_1::VARCHAR(256)                     AS AD_NETWORK_TYPE_1
   , AD_NETWORK_TYPE_2::VARCHAR(256)                     AS AD_NETWORK_TYPE_2
   , _FIVETRAN_ID::VARCHAR(256)                          AS _FIVETRAN_ID
   
-  , COUNTRY_CRITERIA_ID::NUMBER(38,0)                   AS COUNTRY_CRITERIA_ID
-  , REGION_CRITERIA_ID::NUMBER(38,0)                    AS REGION_CRITERIA_ID
-  , METRO_CRITERIA_ID::NUMBER(38,0)                     AS METRO_CRITERIA_ID
-  , CITY_CRITERIA_ID::NUMBER(38,0)                      AS CITY_CRITERIA_ID
+  , COUNTRY_CRITERIA_ID::VARCHAR                        AS COUNTRY_CRITERIA_ID
+  , REGION_CRITERIA_ID::VARCHAR                         AS REGION_CRITERIA_ID
+  , METRO_CRITERIA_ID::VARCHAR                          AS METRO_CRITERIA_ID
+  , CITY_CRITERIA_ID::VARCHAR                           AS CITY_CRITERIA_ID
   
   , COST::FLOAT                                         AS COST
 --  , ACTIVE_VIEW_MEASURABLE_COST::FLOAT                  AS ACTIVE_VIEW_MEASUREABLE_COST

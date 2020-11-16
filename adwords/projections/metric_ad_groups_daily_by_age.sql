@@ -3,16 +3,16 @@ CREATE OR REPLACE VIEW "ADWORDS_VIEWS"."METRIC_AD_GROUPS_DAILY_BY_AGE" AS
 SELECT
 
   DATE::DATE                                            AS DATE
-  , CUSTOMER_ID::NUMBER(38,0)                           AS CUSTOMER_ID
+  , CUSTOMER_ID::VARCHAR                               AS CUSTOMER_ID
   , ACCOUNT_TIME_ZONE::VARCHAR(256)                     AS ACCOUNT_TIME_ZONE
-  , BASE_CAMPAIGN_ID::NUMBER(38,0)                      AS BASE_CAMPAIGN_ID
-  , CAMPAIGN_ID::NUMBER(38,0)                           AS CAMPAIGN_ID
-  , BIDDING_STRATEGY_ID::NUMBER(38,0)                   AS BIDDING_STRATEGY_ID
-  , BASE_AD_GROUP_ID::NUMBER(38,0)                      AS BASE_AD_GROUP_ID
-  , AD_GROUP_ID::NUMBER(38,0)                           AS AD_GROUP_ID
+  , BASE_CAMPAIGN_ID::VARCHAR                           AS BASE_CAMPAIGN_ID
+  , CAMPAIGN_ID::VARCHAR                                AS CAMPAIGN_ID
+  , BIDDING_STRATEGY_ID::VARCHAR                        AS BIDDING_STRATEGY_ID
+  , BASE_AD_GROUP_ID::VARCHAR                           AS BASE_AD_GROUP_ID
+  , AD_GROUP_ID::VARCHAR                                AS AD_GROUP_ID
   , AD_NETWORK_TYPE_1::VARCHAR(256)                     AS AD_NETWORK_TYPE_1
   , AD_NETWORK_TYPE_2::VARCHAR(256)                     AS AD_NETWORK_TYPE_2
-  , ID::NUMBER(38,0)                                    AS __RECORD_ID
+  , ID::VARCHAR                                         AS __RECORD_ID
   , _FIVETRAN_ID::VARCHAR(256)                          AS _FIVETRAN_ID
   
   , COST::FLOAT                                         AS COST

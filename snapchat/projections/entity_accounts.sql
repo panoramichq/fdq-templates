@@ -12,7 +12,7 @@ SELECT
 FROM (
 
   SELECT ID::VARCHAR(256)             AS AD_ACCOUNT_ID 
-      , ORGANIZATION_ID               AS ADVERTISER_ORGANIZATION_ID
+      , ORGANIZATION_ID::VARCHAR      AS ADVERTISER_ORGANIZATION_ID
       ,  ADVERTISER                   AS ADVERTISER
       , CURRENCY                      AS CURRENCY
       , NAME                          AS ACCOUNT_NAME
