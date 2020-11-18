@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW "ADWORDS_VIEWS"."METRIC_AD_GROUPS_DAILY_BY_AUDIENCE" AS
+CREATE OR REPLACE VIEW "ADWORDS_VIEWS"."METRIC_AD_GROUPS_DAILY" AS
 
 SELECT
 
@@ -13,10 +13,8 @@ SELECT
   , AD_GROUP_ID::VARCHAR                                AS AD_GROUP_ID
   , AD_NETWORK_TYPE_1::VARCHAR(256)                     AS AD_NETWORK_TYPE_1
   , AD_NETWORK_TYPE_2::VARCHAR(256)                     AS AD_NETWORK_TYPE_2
-  , CRITERIA::VARCHAR                                   AS AUDIENCE
   , ID::VARCHAR                                         AS __RECORD_ID
   , _FIVETRAN_ID::VARCHAR(256)                          AS _FIVETRAN_ID
-  , USER_LIST_NAME::VARCHAR(256)                        AS USER_LIST_NAME
   
   , COST::FLOAT                                         AS COST
   , ACTIVE_VIEW_MEASURABLE_COST::FLOAT                  AS ACTIVE_VIEW_MEASUREABLE_COST

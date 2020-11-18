@@ -12,6 +12,7 @@ SELECT
   , AD_GROUP_ID::VARCHAR                                AS AD_GROUP_ID
   , AD_NETWORK_TYPE_1::VARCHAR(256)                     AS AD_NETWORK_TYPE_1
   , AD_NETWORK_TYPE_2::VARCHAR(256)                     AS AD_NETWORK_TYPE_2
+  , CRITERIA::VARCHAR                                   AS AGE_RANGE
   , ID::VARCHAR                                         AS __RECORD_ID
   , _FIVETRAN_ID::VARCHAR(256)                          AS _FIVETRAN_ID
   
