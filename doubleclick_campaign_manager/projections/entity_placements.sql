@@ -1,5 +1,5 @@
 CREATE OR REPLACE VIEW "DOUBLECLICK_CAMPAIGN_MANAGER_VIEWS"."ENTITY_PLACEMENTS" AS
-SELECT ACCOUNT_ID::VARCHAR                                                  AS ADVERTISER_ID
+SELECT ACCOUNT_ID::VARCHAR                                                  AS ACCOUNT_ID
        , CAMPAIGN_ID::VARCHAR                                               AS CAMPAIGN_ID
        , SITE_ID_DCM_::VARCHAR                                              AS SITE_ID
        , SITE_DCM_::VARCHAR                                                 AS SITE
