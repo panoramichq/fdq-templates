@@ -1,0 +1,12 @@
+api_version: v1
+company_slug: pano-templates-507dhm4g
+
+dbt:
+  target:
+    name: pc_fivetran_db_pano_templates_507_dhm_4_g
+    parts:
+      schema: FACEBOOK_VIEWS
+      database: PC_FIVETRAN_DB
+
+  packages:
+    - local: dbt_packages/facebook_ads
