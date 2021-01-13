@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: template_caption
+field_type: dimension
+group: CLI
+slug: template_caption

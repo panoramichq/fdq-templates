@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: automatically_select_bid
+field_type: dimension
+group: CLI
+slug: automatically_select_bid

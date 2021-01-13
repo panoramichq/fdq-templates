@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: search_budget_lost_absolute_top_impression_share
+field_type: dimension
+group: CLI
+slug: search_budget_lost_absolute_top_impression_share

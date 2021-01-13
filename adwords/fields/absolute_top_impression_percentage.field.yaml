@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: absolute_top_impression_percentage
+field_type: metric
+group: CLI
+slug: absolute_top_impression_percentage

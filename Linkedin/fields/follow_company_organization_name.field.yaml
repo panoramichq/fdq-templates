@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: follow_company_organization_name
+field_type: dimension
+group: CLI
+slug: follow_company_organization_name

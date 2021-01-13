@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: sponsored_video_user_generated_content_post
+field_type: dimension
+group: CLI
+slug: sponsored_video_user_generated_content_post

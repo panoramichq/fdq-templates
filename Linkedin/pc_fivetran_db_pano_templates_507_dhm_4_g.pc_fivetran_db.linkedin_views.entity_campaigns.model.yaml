@@ -1,0 +1,93 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.LINKEDIN_VIEWS.ENTITY_CAMPAIGNS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ASSOCIATED_ENTITY"'
+  field_map:
+  - associated_entity
+- data_reference: '"AUDIENCE_EXPANSION_ENABLED"'
+  field_map:
+  - audience_expansion_enabled
+- data_reference: '"CAMPAIGN_GROUP_ID"'
+  field_map:
+  - campaign_group_id
+- data_reference: '"COST_TYPE"'
+  field_map:
+  - cost_type
+- data_reference: '"CREATIVE_SELECTION"'
+  field_map:
+  - creative_selection
+- data_reference: '"DAILY_BUDGET_AMOUNT"'
+  field_map:
+  - daily_budget_amount
+- data_reference: '"DAILY_BUDGET_CURRENCY_CODE"'
+  field_map:
+  - daily_budget_currency_code
+- data_reference: '"FORMAT"'
+  field_map:
+  - format
+- data_reference: '"ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"LOCALE_COUNTRY"'
+  field_map:
+  - locale_country
+- data_reference: '"LOCALE_LANGUAGE"'
+  field_map:
+  - locale_language
+- data_reference: '"NAME"'
+  field_map:
+  - campaign_name
+- data_reference: '"OBJECTIVE_TYPE"'
+  field_map:
+  - objective_type
+- data_reference: '"OFFSITE_DELIVERY_ENABLED"'
+  field_map:
+  - offsite_delivery_enabled
+- data_reference: '"OPTIMIZATION_TARGET_TYPE"'
+  field_map:
+  - optimization_target_type
+- data_reference: '"PLATFORM_CREATED_AT"'
+  field_map:
+  - platform_created_at
+- data_reference: '"PLATFORM_UPDATED_AT"'
+  field_map:
+  - platform_updated_at
+- data_reference: '"PROCESSED_AT"'
+  field_map:
+  - processed_at
+- data_reference: '"RUN_SCHEDULE_END"'
+  field_map:
+  - run_schedule_end
+- data_reference: '"RUN_SCHEDULE_START"'
+  field_map:
+  - run_schedule_start
+- data_reference: '"STATUS"'
+  field_map:
+  - status
+- data_reference: '"TYPE"'
+  field_map:
+  - campaign_type
+- data_reference: '"UNIT_COST_AMOUNT"'
+  field_map:
+  - unit_cost_amount
+- data_reference: '"UNIT_COST_CURRENCY_CODE"'
+  field_map:
+  - unit_cost_currency_code
+- data_reference: '"VERSION_TAG"'
+  field_map:
+  - version_tag
+identifiers:
+- account_id
+- campaign_group_id
+- campaign_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  - campaign_group_id
+  to_model: linkedin_views.entity_campaign_groups
+model_name: linkedin_views.entity_campaigns

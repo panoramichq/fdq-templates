@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: time_zone
+field_type: dimension
+group: CLI
+slug: time_zone

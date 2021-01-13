@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: total_click_add_to_cart
+field_type: metric
+group: CLI
+slug: total_click_add_to_cart

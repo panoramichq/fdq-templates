@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: viral_extrernal_website_post_view_conversions
+field_type: metric
+group: CLI
+slug: viral_extrernal_website_post_view_conversions

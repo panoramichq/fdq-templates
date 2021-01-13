@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: location_id
+field_type: dimension
+group: CLI
+slug: location_id

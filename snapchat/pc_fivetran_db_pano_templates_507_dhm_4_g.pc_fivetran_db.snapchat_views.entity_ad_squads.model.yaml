@@ -1,0 +1,79 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.SNAPCHAT_VIEWS.ENTITY_AD_SQUADS
+fields:
+- data_reference: '"AD_SQUAD_ID"'
+  field_map:
+  - ad_squad_id
+- data_reference: '"AD_SQUAD_NAME"'
+  field_map:
+  - ad_squad_name
+- data_reference: '"AD_SQUAD_TYPE"'
+  field_map:
+  - ad_squad_type
+- data_reference: '"AUDIENCE_SIZE_MAXIMUM"'
+  field_map:
+  - audience_size_maximum
+- data_reference: '"AUDIENCE_SIZE_MINIMUM"'
+  field_map:
+  - audience_size_minimum
+- data_reference: '"AUTO_BID"'
+  field_map:
+  - auto_bid
+- data_reference: '"BID_ESTIMATE_MAXIMUM"'
+  field_map:
+  - bid_estimate_maximum
+- data_reference: '"BID_ESTIMATE_MINIMUM"'
+  field_map:
+  - bid_estimate_minimum
+- data_reference: '"BID_MICRO"'
+  field_map:
+  - bid_micro
+- data_reference: '"BILLING_EVENT"'
+  field_map:
+  - billing_event
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DAILY_BUDGET_MICRO"'
+  field_map:
+  - daily_budget_micro
+- data_reference: '"END_TIME"'
+  field_map:
+  - end_time
+- data_reference: '"LIFETIME_BUDGET_MICRO"'
+  field_map:
+  - lifetime_budget_micro
+- data_reference: '"LIFETIME_SPEND_MICRO"'
+  field_map:
+  - lifetime_spend_micro
+- data_reference: '"OPTIMIZATION_GOAL"'
+  field_map:
+  - optimization_goal
+- data_reference: '"PLACEMENT"'
+  field_map:
+  - placement
+- data_reference: '"START_TIME"'
+  field_map:
+  - start_time
+- data_reference: '"STATUS"'
+  field_map:
+  - ad_squad_status
+- data_reference: '"TARGETING_REGULATED_CONTENT"'
+  field_map:
+  - targeting_regulated_content
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+identifiers:
+- campaign_id
+- ad_squad_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - campaign_id
+  to_model: snapchat_views.entity_campaigns
+model_name: snapchat_views.entity_ad_squads

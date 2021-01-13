@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: truncated
+field_type: dimension
+group: CLI
+slug: truncated

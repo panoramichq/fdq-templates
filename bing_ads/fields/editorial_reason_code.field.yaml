@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: editorial_reason_code
+field_type: dimension
+group: CLI
+slug: editorial_reason_code

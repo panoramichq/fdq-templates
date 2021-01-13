@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: use_new_app_click
+field_type: dimension
+group: CLI
+slug: use_new_app_click

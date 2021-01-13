@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: billing_event
+field_type: dimension
+group: CLI
+slug: billing_event

@@ -1,0 +1,76 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.PINTEREST_VIEWS.ENTITY_ADGROUPS
+fields:
+- data_reference: '"AUTO_TARGETING_ENABLED"'
+  field_map:
+  - auto_targeting_enabled
+- data_reference: '"BID_IN_MICRO_CURRENCY"'
+  field_map:
+  - bid_in_micro_currency
+- data_reference: '"BUDGET_IN_MICRO_CURRENCY"'
+  field_map:
+  - budget_in_micro_currency
+- data_reference: '"BUDGET_TYPE"'
+  field_map:
+  - budget_type
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"END_TIME"'
+  field_map:
+  - end_time
+- data_reference: '"ID"'
+  field_map:
+  - ad_group_id
+- data_reference: '"LIFETIME_FREQUENCY_CAP"'
+  field_map:
+  - lifetime_frequency_cap
+- data_reference: '"NAME"'
+  field_map:
+  - ad_group_name
+- data_reference: '"START_TIME"'
+  field_map:
+  - start_time
+- data_reference: '"STATUS"'
+  field_map:
+  - ad_group_status
+- data_reference: '"TARGETING_SPEC_AGE_BUCKET"'
+  field_map:
+  - targeting_spec_age_bucket
+- data_reference: '"TARGETING_SPEC_APPTYPE"'
+  field_map:
+  - targeting_spec_apptype
+- data_reference: '"TARGETING_SPEC_AUDIENCE_INCLUDE"'
+  field_map:
+  - targeting_spec_audience_include
+- data_reference: '"TARGETING_SPEC_GENDER"'
+  field_map:
+  - targeting_spec_gender
+- data_reference: '"TARGETING_SPEC_INTEREST"'
+  field_map:
+  - targeting_spec_interest
+- data_reference: '"TARGETING_SPEC_LOCALE"'
+  field_map:
+  - targeting_spec_locale
+- data_reference: '"TARGETING_SPEC_LOCATION"'
+  field_map:
+  - targeting_spec_location
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"UPGRADE_STATUS"'
+  field_map:
+  - upgrade_status
+identifiers:
+- campaign_id
+- ad_group_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - campaign_id
+  to_model: pinterest_views.entity_campaigns
+model_name: pinterest_views.entity_adgroups

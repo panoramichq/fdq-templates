@@ -1,0 +1,6 @@
+api_version: v1
+data_type: datetime
+display_name: end_time
+field_type: dimension
+group: CLI
+slug: end_time

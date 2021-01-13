@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: quartile_2
+field_type: metric
+group: CLI
+slug: quartile_2

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: low_quality_general_clicks
+field_type: metric
+group: CLI
+slug: low_quality_general_clicks

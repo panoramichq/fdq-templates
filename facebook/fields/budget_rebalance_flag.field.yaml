@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: budget_rebalance_flag
+field_type: dimension
+group: CLI
+slug: budget_rebalance_flag

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: targeting_app_install_state
+field_type: dimension
+group: CLI
+slug: targeting_app_install_state

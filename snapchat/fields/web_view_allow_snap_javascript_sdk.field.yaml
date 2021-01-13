@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: web_view_allow_snap_javascript_sdk
+field_type: dimension
+group: CLI
+slug: web_view_allow_snap_javascript_sdk

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: datetime
+display_name: __processed_at
+field_type: dimension
+group: CLI
+slug: __processed_at

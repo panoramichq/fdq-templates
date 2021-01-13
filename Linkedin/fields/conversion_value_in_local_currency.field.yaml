@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: conversion_value_in_local_currency
+field_type: metric
+group: CLI
+slug: conversion_value_in_local_currency

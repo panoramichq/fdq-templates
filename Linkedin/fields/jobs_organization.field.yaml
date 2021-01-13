@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: jobs_organization
+field_type: dimension
+group: CLI
+slug: jobs_organization

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: current_max_cpc
+field_type: dimension
+group: CLI
+slug: current_max_cpc

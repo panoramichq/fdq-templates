@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: first_cta
+field_type: dimension
+group: CLI
+slug: first_cta

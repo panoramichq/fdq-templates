@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: goal_4_completions
+field_type: metric
+group: CLI
+slug: goal_4_completions

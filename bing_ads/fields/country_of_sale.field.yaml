@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: country_of_sale
+field_type: dimension
+group: CLI
+slug: country_of_sale

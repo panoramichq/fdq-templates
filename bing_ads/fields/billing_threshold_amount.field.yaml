@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: billing_threshold_amount
+field_type: metric
+group: CLI
+slug: billing_threshold_amount

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: datetime
+display_name: business_manager_created_time
+field_type: dimension
+group: CLI
+slug: business_manager_created_time

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: image_file
+field_type: dimension
+group: CLI
+slug: image_file

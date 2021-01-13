@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: url_index
+field_type: metric
+group: CLI
+slug: url_index

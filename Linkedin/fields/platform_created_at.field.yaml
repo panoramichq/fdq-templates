@@ -1,0 +1,6 @@
+api_version: v1
+data_type: datetime
+display_name: platform_created_at
+field_type: dimension
+group: CLI
+slug: platform_created_at

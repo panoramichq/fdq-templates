@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: policy_summary_denormalized_status
+field_type: dimension
+group: CLI
+slug: policy_summary_denormalized_status

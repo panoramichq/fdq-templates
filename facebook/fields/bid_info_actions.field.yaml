@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: bid_info_actions
+field_type: metric
+group: CLI
+slug: bid_info_actions

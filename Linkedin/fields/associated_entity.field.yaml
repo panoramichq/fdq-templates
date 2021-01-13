@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: associated_entity
+field_type: dimension
+group: CLI
+slug: associated_entity

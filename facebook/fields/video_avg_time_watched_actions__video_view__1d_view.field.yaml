@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: video_avg_time_watched_actions__video_view__1d_view
+field_type: metric
+group: CLI
+slug: video_avg_time_watched_actions__video_view__1d_view

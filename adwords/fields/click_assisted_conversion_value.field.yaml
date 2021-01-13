@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: click_assisted_conversion_value
+field_type: metric
+group: CLI
+slug: click_assisted_conversion_value

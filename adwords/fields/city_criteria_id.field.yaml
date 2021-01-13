@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: city_criteria_id
+field_type: dimension
+group: CLI
+slug: city_criteria_id

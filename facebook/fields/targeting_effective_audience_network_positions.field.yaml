@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: targeting_effective_audience_network_positions
+field_type: dimension
+group: CLI
+slug: targeting_effective_audience_network_positions

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: flight_booked_rate
+field_type: dimension
+group: CLI
+slug: flight_booked_rate

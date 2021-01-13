@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: tos_accepted_custom_audience_tos
+field_type: metric
+group: CLI
+slug: tos_accepted_custom_audience_tos

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: search_rank_lost_impression_share
+field_type: dimension
+group: CLI
+slug: search_rank_lost_impression_share

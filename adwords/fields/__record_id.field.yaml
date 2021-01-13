@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: __record_id
+field_type: dimension
+group: CLI
+slug: __record_id

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: bidding_strategy_bid_changes_for_raises_only
+field_type: dimension
+group: CLI
+slug: bidding_strategy_bid_changes_for_raises_only

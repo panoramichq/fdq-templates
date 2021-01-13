@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: billed_charge_local_micro
+field_type: metric
+group: CLI
+slug: billed_charge_local_micro

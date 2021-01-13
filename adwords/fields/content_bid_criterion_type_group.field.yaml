@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: content_bid_criterion_type_group
+field_type: dimension
+group: CLI
+slug: content_bid_criterion_type_group

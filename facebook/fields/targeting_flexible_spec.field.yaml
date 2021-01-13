@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: targeting_flexible_spec
+field_type: dimension
+group: CLI
+slug: targeting_flexible_spec

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: sold_to_payment_instrument_id
+field_type: dimension
+group: CLI
+slug: sold_to_payment_instrument_id

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: __lifetime_spend_cap_micro_microdollars
+field_type: metric
+group: CLI
+slug: __lifetime_spend_cap_micro_microdollars

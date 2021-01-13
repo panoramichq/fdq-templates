@@ -1,0 +1,51 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.GOOGLE_ANALYTICS_VIEWS.PRODUCT_PERFORMANCE
+fields:
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DATE"'
+  field_map:
+  - date
+- data_reference: '"ITEMS_PER_PURCHASE"'
+  field_map:
+  - items_per_purchase
+- data_reference: '"ITEM_QUANTITY"'
+  field_map:
+  - item_quantity
+- data_reference: '"ITEM_REVENUE"'
+  field_map:
+  - item_revenue
+- data_reference: '"PRODUCT_ADDS_TO_CART"'
+  field_map:
+  - product_adds_to_cart
+- data_reference: '"PRODUCT_CATEGORY"'
+  field_map:
+  - product_category
+- data_reference: '"PRODUCT_CHECKOUTS"'
+  field_map:
+  - product_checkouts
+- data_reference: '"PRODUCT_DETAIL_VIEWS"'
+  field_map:
+  - product_detail_views
+- data_reference: '"PRODUCT_NAME"'
+  field_map:
+  - product_name
+- data_reference: '"PRODUCT_SKU"'
+  field_map:
+  - product_sku
+- data_reference: '"PROFILE_ID"'
+  field_map:
+  - profile_id
+- data_reference: '"REVENUE_PER_ITEM"'
+  field_map:
+  - revenue_per_item
+- data_reference: '"UNIQUE_PURCHASES"'
+  field_map:
+  - unique_purchases
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+identifiers: []
+joins: []
+model_name: google_analytics_views.product_performance

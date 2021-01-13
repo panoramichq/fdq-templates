@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: primary_web_event_tag
+field_type: dimension
+group: CLI
+slug: primary_web_event_tag

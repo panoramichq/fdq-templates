@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: operation_status_description
+field_type: dimension
+group: CLI
+slug: operation_status_description

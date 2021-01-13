@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: inherited_bid_strategy_type
+field_type: dimension
+group: CLI
+slug: inherited_bid_strategy_type

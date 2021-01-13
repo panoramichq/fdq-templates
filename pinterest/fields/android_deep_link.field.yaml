@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: android_deep_link
+field_type: dimension
+group: CLI
+slug: android_deep_link

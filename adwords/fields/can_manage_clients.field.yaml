@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: can_manage_clients
+field_type: dimension
+group: CLI
+slug: can_manage_clients

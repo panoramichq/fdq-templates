@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: click_through_revenue
+field_type: metric
+group: CLI
+slug: click_through_revenue

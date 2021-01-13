@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: ad_group_rotation_mode
+field_type: dimension
+group: CLI
+slug: ad_group_rotation_mode

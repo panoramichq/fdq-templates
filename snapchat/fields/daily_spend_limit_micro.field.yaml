@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: daily_spend_limit_micro
+field_type: metric
+group: CLI
+slug: daily_spend_limit_micro

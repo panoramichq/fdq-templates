@@ -1,0 +1,79 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.BING_ADS_VIEWS.ENTITY_CAMPAIGNS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"BID_ADJUSTMENT"'
+  field_map:
+  - bid_adjustment
+- data_reference: '"BID_STRATEGY_MAX_CPC"'
+  field_map:
+  - bid_strategy_max_cpc
+- data_reference: '"BID_STRATEGY_TARGET_CPA"'
+  field_map:
+  - bid_strategy_target_cpa
+- data_reference: '"BID_STRATEGY_TYPE"'
+  field_map:
+  - bid_strategy_type
+- data_reference: '"BUDGET"'
+  field_map:
+  - budget
+- data_reference: '"BUDGET_ID"'
+  field_map:
+  - budget_id
+- data_reference: '"COUNTRY_CODE"'
+  field_map:
+  - country_code
+- data_reference: '"DOMAIN_LANGUAGE"'
+  field_map:
+  - domain_language
+- data_reference: '"ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"LANGUAGE"'
+  field_map:
+  - language
+- data_reference: '"LOCAL_INVENTORY_ADS_ENABLED"'
+  field_map:
+  - local_inventory_ads_enabled
+- data_reference: '"MODIFIED_TIME"'
+  field_map:
+  - modified_time
+- data_reference: '"NAME"'
+  field_map:
+  - campaign_name
+- data_reference: '"PRIORITY"'
+  field_map:
+  - priority
+- data_reference: '"STATUS"'
+  field_map:
+  - campaign_status
+- data_reference: '"STORE_ID"'
+  field_map:
+  - store_id
+- data_reference: '"SUB_TYPE"'
+  field_map:
+  - campaign_sub_type
+- data_reference: '"TIME_ZONE"'
+  field_map:
+  - time_zone
+- data_reference: '"TRACKING_TEMPLATE"'
+  field_map:
+  - tracking_template
+- data_reference: '"TYPE"'
+  field_map:
+  - campaign_type
+- data_reference: '"WEBSITE"'
+  field_map:
+  - website
+identifiers:
+- account_id
+- campaign_id
+joins:
+- fields:
+  - account_id
+  join_type: left
+  relationship: many_to_one
+  to_model: bing_ads_views.entity_accounts
+model_name: bing_ads_views.entity_campaigns

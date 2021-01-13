@@ -1,0 +1,64 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.FACEBOOK_VIEWS.METRIC_ADS_DAILY_BY_REGION
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ADSET_ID"'
+  field_map:
+  - ad_set_id
+- data_reference: '"AD_ID"'
+  field_map:
+  - ad_id
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CLICKS"'
+  field_map:
+  - clicks
+- data_reference: '"DATE"'
+  field_map:
+  - date
+- data_reference: '"IMPRESSIONS"'
+  field_map:
+  - impressions
+- data_reference: '"REGION"'
+  field_map:
+  - region
+- data_reference: '"SPEND"'
+  field_map:
+  - spend
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- account_id
+- campaign_id
+- ad_set_id
+- ad_id
+- date
+- region
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  - campaign_id
+  - ad_set_id
+  - ad_id
+  to_model: facebook_views.entity_ads
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - ad_id
+  - date
+  - region
+  to_model: facebook_views.metric_ads_daily_action_values_by_region_transformed
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - ad_id
+  - date
+  - region
+  to_model: facebook_views.metric_ads_daily_actions_by_region_transformed
+model_name: facebook_views.metric_ads_daily_by_region

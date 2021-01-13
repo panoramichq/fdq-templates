@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: boosted_object_id
+field_type: dimension
+group: CLI
+slug: boosted_object_id

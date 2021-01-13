@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: one_click_leads
+field_type: metric
+group: CLI
+slug: one_click_leads

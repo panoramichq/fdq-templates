@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: sales_house_customer_id
+field_type: dimension
+group: CLI
+slug: sales_house_customer_id

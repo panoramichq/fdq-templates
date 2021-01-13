@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: event_category
+field_type: dimension
+group: CLI
+slug: event_category

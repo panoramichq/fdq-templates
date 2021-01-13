@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: average_time_on_site
+field_type: metric
+group: CLI
+slug: average_time_on_site

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: optimization_target_type
+field_type: dimension
+group: CLI
+slug: optimization_target_type

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: social_network
+field_type: dimension
+group: CLI
+slug: social_network

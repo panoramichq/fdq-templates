@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: canonical_region_name
+field_type: dimension
+group: CLI
+slug: canonical_region_name

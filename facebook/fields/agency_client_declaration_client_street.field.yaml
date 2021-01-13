@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: agency_client_declaration_client_street
+field_type: dimension
+group: CLI
+slug: agency_client_declaration_client_street

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: video_mrc_views
+field_type: metric
+group: CLI
+slug: video_mrc_views

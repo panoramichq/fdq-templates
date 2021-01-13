@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: agency_client_declaration_agency_representing_client
+field_type: metric
+group: CLI
+slug: agency_client_declaration_agency_representing_client

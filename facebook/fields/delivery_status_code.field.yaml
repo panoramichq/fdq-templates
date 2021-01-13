@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: delivery_status_code
+field_type: metric
+group: CLI
+slug: delivery_status_code

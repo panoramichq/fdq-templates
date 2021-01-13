@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: sponsored_update_carousel_activity
+field_type: dimension
+group: CLI
+slug: sponsored_update_carousel_activity

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: mainline_1_bid
+field_type: dimension
+group: CLI
+slug: mainline_1_bid

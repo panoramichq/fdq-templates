@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: base_ad_group_id
+field_type: dimension
+group: CLI
+slug: base_ad_group_id

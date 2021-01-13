@@ -1,0 +1,6 @@
+api_version: v1
+data_type: datetime
+display_name: _fivetran_synced
+field_type: dimension
+group: CLI
+slug: _fivetran_synced

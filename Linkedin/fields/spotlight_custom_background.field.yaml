@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: spotlight_custom_background
+field_type: dimension
+group: CLI
+slug: spotlight_custom_background

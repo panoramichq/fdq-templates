@@ -1,0 +1,100 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.BING_ADS_VIEWS.ENTITY_ACCOUNTS
+fields:
+- data_reference: '"ACCOUNT_FINANCIAL_STATUS"'
+  field_map:
+  - account_financial_status
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ACCOUNT_LIFE_CYCLE_STATUS"'
+  field_map:
+  - account_life_cycle_status
+- data_reference: '"AUTO_TAG_TYPE"'
+  field_map:
+  - auto_tag_type
+- data_reference: '"BACK_UP_PAYMENT_INSTRUMENT_ID"'
+  field_map:
+  - back_up_payment_instrument_id
+- data_reference: '"BILLING_THRESHOLD_AMOUNT"'
+  field_map:
+  - billing_threshold_amount
+- data_reference: '"BILL_TO_CUSTOMER_ID"'
+  field_map:
+  - bill_to_customer_id
+- data_reference: '"BUSINESS_ADDRESS_CITY"'
+  field_map:
+  - business_address_city
+- data_reference: '"BUSINESS_ADDRESS_COUNTRY_CODE"'
+  field_map:
+  - business_address_country_code
+- data_reference: '"BUSINESS_ADDRESS_ID"'
+  field_map:
+  - business_address_id
+- data_reference: '"BUSINESS_ADDRESS_LINE_1"'
+  field_map:
+  - business_address_line_1
+- data_reference: '"BUSINESS_ADDRESS_LINE_2"'
+  field_map:
+  - business_address_line_2
+- data_reference: '"BUSINESS_ADDRESS_LINE_3"'
+  field_map:
+  - business_address_line_3
+- data_reference: '"BUSINESS_ADDRESS_LINE_4"'
+  field_map:
+  - business_address_line_4
+- data_reference: '"BUSINESS_ADDRESS_POSTAL_CODE"'
+  field_map:
+  - business_address_postal_code
+- data_reference: '"BUSINESS_ADDRESS_STATE_OR_PROVINCE"'
+  field_map:
+  - business_address_state_or_province
+- data_reference: '"BUSINESS_NAME"'
+  field_map:
+  - business_name
+- data_reference: '"CURRENCY_CODE"'
+  field_map:
+  - currency_code
+- data_reference: '"LANGUAGE"'
+  field_map:
+  - language
+- data_reference: '"LAST_MODIFIED_BY_USER_ID"'
+  field_map:
+  - last_modified_by_user_id
+- data_reference: '"LAST_MODIFIED_TIME"'
+  field_map:
+  - last_modified_time
+- data_reference: '"NAME"'
+  field_map:
+  - account_name
+- data_reference: '"NUMBER"'
+  field_map:
+  - account_number
+- data_reference: '"PARENT_CUSTOMER_ID"'
+  field_map:
+  - parent_customer_id
+- data_reference: '"PAUSE_REASON"'
+  field_map:
+  - pause_reason
+- data_reference: '"PAYMENT_METHOD_ID"'
+  field_map:
+  - payment_method_id
+- data_reference: '"PAYMENT_METHOD_TYPE"'
+  field_map:
+  - payment_method_type
+- data_reference: '"PRIMARY_USER_ID"'
+  field_map:
+  - primary_user_id
+- data_reference: '"SALES_HOUSE_CUSTOMER_ID"'
+  field_map:
+  - sales_house_customer_id
+- data_reference: '"SOLD_TO_PAYMENT_INSTRUMENT_ID"'
+  field_map:
+  - sold_to_payment_instrument_id
+- data_reference: '"TIME_ZONE"'
+  field_map:
+  - time_zone
+identifiers:
+- account_id
+joins: []
+model_name: bing_ads_views.entity_accounts

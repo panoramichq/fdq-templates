@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: full_text
+field_type: dimension
+group: CLI
+slug: full_text

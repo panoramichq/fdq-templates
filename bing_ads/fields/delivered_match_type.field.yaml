@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: delivered_match_type
+field_type: dimension
+group: CLI
+slug: delivered_match_type

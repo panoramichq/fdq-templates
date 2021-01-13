@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: value_per_current_model_attributed_conversion
+field_type: metric
+group: CLI
+slug: value_per_current_model_attributed_conversion

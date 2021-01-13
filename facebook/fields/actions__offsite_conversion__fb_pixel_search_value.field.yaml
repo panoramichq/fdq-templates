@@ -1,0 +1,8 @@
+aggregation:
+  type: sum
+api_version: v1
+data_type: numeric
+display_name: actions__offsite_conversion__fb_pixel_search_value
+field_type: metric
+group: CLI
+slug: actions__offsite_conversion__fb_pixel_search_value

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: last_updated_by_app_id
+field_type: dimension
+group: CLI
+slug: last_updated_by_app_id

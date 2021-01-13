@@ -1,0 +1,71 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.SNAPCHAT_VIEWS.ENTITY_FUNDING_SOURCES
+fields:
+- data_reference: '"AVAILABLE_CREDIT_MICRO"'
+  field_map:
+  - available_credit_micro
+- data_reference: '"BUDGET_SPENT_MICRO"'
+  field_map:
+  - budget_spent_micro
+- data_reference: '"CARD_TYPE"'
+  field_map:
+  - card_type
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"CURRENCY"'
+  field_map:
+  - currency
+- data_reference: '"DAILY_SPEND_LIMIT_CURRENCY"'
+  field_map:
+  - daily_spend_limit_currency
+- data_reference: '"DAILY_SPEND_LIMIT_MICRO"'
+  field_map:
+  - daily_spend_limit_micro
+- data_reference: '"EMAIL"'
+  field_map:
+  - email
+- data_reference: '"END_DATE"'
+  field_map:
+  - end_date
+- data_reference: '"EXPIRATION_MONTH"'
+  field_map:
+  - expiration_month
+- data_reference: '"EXPIRATION_YEAR"'
+  field_map:
+  - expiration_year
+- data_reference: '"FUNDING_SOURCE_ID"'
+  field_map:
+  - funding_source_id
+- data_reference: '"FUNDING_SOURCE_NAME"'
+  field_map:
+  - funding_source_name
+- data_reference: '"FUNDING_SOURCE_TYPE"'
+  field_map:
+  - funding_source_type
+- data_reference: '"LAST_4_DIGITS_OF_CARD"'
+  field_map:
+  - last_4_digits_of_card
+- data_reference: '"ORGANIZATION_ID"'
+  field_map:
+  - organization_id
+- data_reference: '"START_DATE"'
+  field_map:
+  - start_date
+- data_reference: '"STATUS"'
+  field_map:
+  - funding_source_status
+- data_reference: '"TOTAL_BUDGET_MICRO"'
+  field_map:
+  - total_budget_micro
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"VALUE_MICRO"'
+  field_map:
+  - value_micro
+identifiers:
+- organization_id
+- funding_source_id
+joins: []
+model_name: snapchat_views.entity_funding_sources

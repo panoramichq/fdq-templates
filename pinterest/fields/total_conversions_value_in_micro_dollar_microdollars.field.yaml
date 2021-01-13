@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: total_conversions_value_in_micro_dollar_microdollars
+field_type: metric
+group: CLI
+slug: total_conversions_value_in_micro_dollar_microdollars

@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: last_4_digits_of_card
+field_type: metric
+group: CLI
+slug: last_4_digits_of_card

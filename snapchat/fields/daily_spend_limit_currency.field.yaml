@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: daily_spend_limit_currency
+field_type: dimension
+group: CLI
+slug: daily_spend_limit_currency

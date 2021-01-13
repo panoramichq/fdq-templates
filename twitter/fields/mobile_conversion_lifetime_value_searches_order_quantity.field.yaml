@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: mobile_conversion_lifetime_value_searches_order_quantity
+field_type: metric
+group: CLI
+slug: mobile_conversion_lifetime_value_searches_order_quantity

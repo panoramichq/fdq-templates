@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: back_up_payment_instrument_id
+field_type: dimension
+group: CLI
+slug: back_up_payment_instrument_id

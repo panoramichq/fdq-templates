@@ -1,0 +1,6 @@
+api_version: v1
+data_type: boolean
+display_name: permission_for_actions_supports_recipient_lookalike
+field_type: dimension
+group: CLI
+slug: permission_for_actions_supports_recipient_lookalike

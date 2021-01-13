@@ -1,0 +1,55 @@
+api_version: v1
+data_source: pc_fivetran_db_pano_templates_507_dhm_4_g.PC_FIVETRAN_DB.PINTEREST_VIEWS.ENTITY_KEYWORDS
+fields:
+- data_reference: '"ADVERTISER_ID"'
+  field_map:
+  - advertiser_id
+- data_reference: '"AD_GROUP_ID"'
+  field_map:
+  - ad_group_id
+- data_reference: '"ARCHIVED"'
+  field_map:
+  - archived
+- data_reference: '"BID"'
+  field_map:
+  - bid
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"DELETED"'
+  field_map:
+  - deleted
+- data_reference: '"EXCLUDE"'
+  field_map:
+  - exclude
+- data_reference: '"ID"'
+  field_map:
+  - keyword_id
+- data_reference: '"MATCH_TYPE"'
+  field_map:
+  - match_type
+- data_reference: '"NEW_MATCH_TYPE"'
+  field_map:
+  - new_match_type
+- data_reference: '"PARENT_TYPE"'
+  field_map:
+  - parent_type
+- data_reference: '"VALUE"'
+  field_map:
+  - keyword_value
+- data_reference: '"__PROCESSED_AT"'
+  field_map:
+  - __processed_at
+identifiers:
+- advertiser_id
+- ad_group_id
+- campaign_id
+- keyword_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - advertiser_id
+  - ad_group_id
+  to_model: pinterest_views.entity_adgroups
+model_name: pinterest_views.entity_keywords

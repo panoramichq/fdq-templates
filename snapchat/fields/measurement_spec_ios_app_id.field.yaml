@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: measurement_spec_ios_app_id
+field_type: metric
+group: CLI
+slug: measurement_spec_ios_app_id

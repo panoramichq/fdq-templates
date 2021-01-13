@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: data_source_type
+field_type: dimension
+group: CLI
+slug: data_source_type

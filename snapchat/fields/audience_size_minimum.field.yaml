@@ -1,0 +1,6 @@
+api_version: v1
+data_type: numeric
+display_name: audience_size_minimum
+field_type: metric
+group: CLI
+slug: audience_size_minimum

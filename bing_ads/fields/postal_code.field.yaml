@@ -1,0 +1,6 @@
+api_version: v1
+data_type: text
+display_name: postal_code
+field_type: dimension
+group: CLI
+slug: postal_code
