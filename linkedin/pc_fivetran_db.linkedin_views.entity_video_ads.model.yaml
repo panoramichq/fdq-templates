@@ -1,0 +1,45 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.LINKEDIN_VIEWS.ENTITY_VIDEO_ADS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ACCOUNT_LAST_MODIFIED_TIME"'
+  field_map:
+  - account_last_modified_time
+- data_reference: '"CREATED_TIME"'
+  field_map:
+  - created_time
+- data_reference: '"ID"'
+  field_map:
+  - video_ad_id
+- data_reference: '"LAST_MODIFIED_TIME"'
+  field_map:
+  - last_modified_time
+- data_reference: '"NAME"'
+  field_map:
+  - video_ad_name
+- data_reference: '"OWNER"'
+  field_map:
+  - owner
+- data_reference: '"PROCESSED_AT"'
+  field_map:
+  - processed_at
+- data_reference: '"TYPE"'
+  field_map:
+  - video_ad_type
+identifiers:
+- account_id
+- video_ad_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  to_model: linkedin_views.entity_accounts
+#- join_type: left
+#  relationship: many_to_one
+#  taxons:
+#   - video_ad_id
+#  - video_ad_id # missing > needs to be extracted from entity_creative>reference > SPLIT_PART({{ column }},':',4)
+model_name: linkedin_views.entity_video_ads

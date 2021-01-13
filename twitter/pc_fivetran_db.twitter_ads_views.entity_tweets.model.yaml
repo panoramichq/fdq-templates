@@ -1,0 +1,86 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_TWEETS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"CARD_URI"'
+  field_map:
+  - card_uri
+- data_reference: '"COORDINATES_COORDINATES"'
+  field_map:
+  - coordinates_coordinates
+- data_reference: '"COORDINATES_TYPE"'
+  field_map:
+  - coordinates_type
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"FAVORITED"'
+  field_map:
+  - favorited
+- data_reference: '"FAVORITE_COUNT"'
+  field_map:
+  - favorite_count
+- data_reference: '"FOLLOWERS"'
+  field_map:
+  - followers
+- data_reference: '"FULL_TEXT"'
+  field_map:
+  - full_text
+- data_reference: '"GEO_COORDINATES"'
+  field_map:
+  - geo_coordinates
+- data_reference: '"GEO_TYPE"'
+  field_map:
+  - geo_type
+- data_reference: '"IN_REPLY_TO_SCREEN_NAME"'
+  field_map:
+  - in_reply_to_screen_name
+- data_reference: '"IN_REPLY_TO_STATUS_ID"'
+  field_map:
+  - in_reply_to_status_id
+- data_reference: '"IN_REPLY_TO_USER_ID"'
+  field_map:
+  - in_reply_to_user_id
+- data_reference: '"LANG"'
+  field_map:
+  - lang
+- data_reference: '"MEDIA_KEY"'
+  field_map:
+  - media_key
+- data_reference: '"RETWEETED"'
+  field_map:
+  - retweeted
+- data_reference: '"RETWEET_COUNT"'
+  field_map:
+  - retweet_count
+- data_reference: '"SOURCE"'
+  field_map:
+  - source
+- data_reference: '"TRUNCATED"'
+  field_map:
+  - truncated
+- data_reference: '"TWEET_ID"'
+  field_map:
+  - tweet_id
+- data_reference: '"TWEET_TYPE"'
+  field_map:
+  - tweet_type
+- data_reference: '"USER_ID"'
+  field_map:
+  - user_id
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- account_id
+- tweet_id
+- user_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  to_model: twitter_ads_views.entity_accounts
+model_name: twitter_ads_views.entity_tweets

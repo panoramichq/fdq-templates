@@ -1,0 +1,109 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.FACEBOOK_VIEWS.ENTITY_CUSTOM_AUDIENCES
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"APPROXIMATE_COUNT"'
+  field_map:
+  - approximate_count
+- data_reference: '"CONTENT_UPDATED_TIME"'
+  field_map:
+  - content_updated_time
+- data_reference: '"CREATED_TIME"'
+  field_map:
+  - created_time
+- data_reference: '"CUSTOM_AUDIENCE_ID"'
+  field_map:
+  - custom_audience_id
+- data_reference: '"CUSTOM_AUDIENCE_NAME"'
+  field_map:
+  - custom_audience_name
+- data_reference: '"DATA_SOURCE_CREATION_PARAMS"'
+  field_map:
+  - data_source_creation_params
+- data_reference: '"DATA_SOURCE_SUB_TYPE"'
+  field_map:
+  - data_source_sub_type
+- data_reference: '"DATA_SOURCE_TYPE"'
+  field_map:
+  - data_source_type
+- data_reference: '"DELIVERY_STATUS_CODE"'
+  field_map:
+  - delivery_status_code
+- data_reference: '"DELIVERY_STATUS_DESCRIPTION"'
+  field_map:
+  - delivery_status_description
+- data_reference: '"DESCRIPTION"'
+  field_map:
+  - description
+- data_reference: '"IS_VALUE_BASED"'
+  field_map:
+  - is_value_based
+- data_reference: '"LOOKALIKE_COUNTRY"'
+  field_map:
+  - lookalike_country
+- data_reference: '"LOOKALIKE_IS_FINANCIAL_SERVICE"'
+  field_map:
+  - lookalike_is_financial_service
+- data_reference: '"LOOKALIKE_RATIO"'
+  field_map:
+  - lookalike_ratio
+- data_reference: '"LOOKALIKE_STARTING_RATIO"'
+  field_map:
+  - lookalike_starting_ratio
+- data_reference: '"LOOKALIKE_TYPE"'
+  field_map:
+  - lookalike_type
+- data_reference: '"OPERATION_STATUS_CODE"'
+  field_map:
+  - operation_status_code
+- data_reference: '"OPERATION_STATUS_DESCRIPTION"'
+  field_map:
+  - operation_status_description
+- data_reference: '"OPT_OUT_LINK"'
+  field_map:
+  - opt_out_link
+- data_reference: '"PERMISSION_FOR_ACTIONS_CAN_EDIT"'
+  field_map:
+  - permission_for_actions_can_edit
+- data_reference: '"PERMISSION_FOR_ACTIONS_CAN_SEE_INSIGHT"'
+  field_map:
+  - permission_for_actions_can_see_insight
+- data_reference: '"PERMISSION_FOR_ACTIONS_CAN_SHARE"'
+  field_map:
+  - permission_for_actions_can_share
+- data_reference: '"PERMISSION_FOR_ACTIONS_SUBTYPE_SUPPORTS_LOOKALIKE"'
+  field_map:
+  - permission_for_actions_subtype_supports_lookalike
+- data_reference: '"PERMISSION_FOR_ACTIONS_SUPPORTS_RECIPIENT_LOOKALIKE"'
+  field_map:
+  - permission_for_actions_supports_recipient_lookalike
+- data_reference: '"RETENTION_DAYS"'
+  field_map:
+  - retention_days
+- data_reference: '"RULE"'
+  field_map:
+  - rule
+- data_reference: '"RULE_AGGREGATION"'
+  field_map:
+  - rule_aggregation
+- data_reference: '"SUBTYPE"'
+  field_map:
+  - subtype
+- data_reference: '"UPDATED_TIME"'
+  field_map:
+  - updated_time
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- account_id
+- custom_audience_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  to_model: facebook_views.entity_accounts
+model_name: facebook_views.entity_custom_audiences

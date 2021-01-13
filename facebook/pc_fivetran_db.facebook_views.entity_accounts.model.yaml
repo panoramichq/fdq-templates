@@ -1,0 +1,202 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.FACEBOOK_VIEWS.ENTITY_ACCOUNTS
+fields:
+- data_reference: '"ACCOUNT_AGE"'
+  field_map:
+  - account_age
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ACCOUNT_NAME"'
+  field_map:
+  - account_name
+- data_reference: '"ACCOUNT_STATUS"'
+  field_map:
+  - account_status
+- data_reference: '"AGENCY_CLIENT_DECLARATION_AGENCY_REPRESENTING_CLIENT"'
+  field_map:
+  - agency_client_declaration_agency_representing_client
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_BASED_IN_FRANCE"'
+  field_map:
+  - agency_client_declaration_client_based_in_france
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_CITY"'
+  field_map:
+  - agency_client_declaration_client_city
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_COUNTRY_CODE"'
+  field_map:
+  - agency_client_declaration_client_country_code
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_EMAIL_ADDRESS"'
+  field_map:
+  - agency_client_declaration_client_email_address
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_NAME"'
+  field_map:
+  - agency_client_declaration_client_name
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_POSTAL_CODE"'
+  field_map:
+  - agency_client_declaration_client_postal_code
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_PROVINCE"'
+  field_map:
+  - agency_client_declaration_client_province
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_STREET"'
+  field_map:
+  - agency_client_declaration_client_street
+- data_reference: '"AGENCY_CLIENT_DECLARATION_CLIENT_STREET_2"'
+  field_map:
+  - agency_client_declaration_client_street_2
+- data_reference: '"AGENCY_CLIENT_DECLARATION_HAS_WRITTEN_MANDATE_FROM_ADVERTISER"'
+  field_map:
+  - agency_client_declaration_has_written_mandate_from_advertiser
+- data_reference: '"AGENCY_CLIENT_DECLARATION_IS_CLIENT_PAYING_INVOICES"'
+  field_map:
+  - agency_client_declaration_is_client_paying_invoices
+- data_reference: '"AMOUNT_SPENT"'
+  field_map:
+  - amount_spent
+- data_reference: '"BALANCE"'
+  field_map:
+  - balance
+- data_reference: '"BUSINESS_CITY"'
+  field_map:
+  - business_city
+- data_reference: '"BUSINESS_COUNTRY_CODE"'
+  field_map:
+  - business_country_code
+- data_reference: '"BUSINESS_MANAGER_CREATED_BY"'
+  field_map:
+  - business_manager_created_by
+- data_reference: '"BUSINESS_MANAGER_CREATED_TIME"'
+  field_map:
+  - business_manager_created_time
+- data_reference: '"BUSINESS_MANAGER_MANAGER_ID"'
+  field_map:
+  - business_manager_manager_id
+- data_reference: '"BUSINESS_MANAGER_NAME"'
+  field_map:
+  - business_manager_name
+- data_reference: '"BUSINESS_MANAGER_PRIMARY_PAGE"'
+  field_map:
+  - business_manager_primary_page
+- data_reference: '"BUSINESS_MANAGER_TIMEZONE_ID"'
+  field_map:
+  - business_manager_timezone_id
+- data_reference: '"BUSINESS_MANAGER_UPDATED_BY"'
+  field_map:
+  - business_manager_updated_by
+- data_reference: '"BUSINESS_MANAGER_UPDATE_TIME"'
+  field_map:
+  - business_manager_update_time
+- data_reference: '"BUSINESS_NAME"'
+  field_map:
+  - business_name
+- data_reference: '"BUSINESS_STATE"'
+  field_map:
+  - business_state
+- data_reference: '"BUSINESS_STREET"'
+  field_map:
+  - business_street
+- data_reference: '"BUSINESS_STREET_2"'
+  field_map:
+  - business_street_2
+- data_reference: '"BUSINESS_ZIP"'
+  field_map:
+  - business_zip
+- data_reference: '"CAN_CREATE_BRAND_LIFT_STUDY"'
+  field_map:
+  - can_create_brand_lift_study
+- data_reference: '"CREATED_TIME"'
+  field_map:
+  - created_time
+- data_reference: '"CURRENCY"'
+  field_map:
+  - currency
+- data_reference: '"DISABLE_REASON"'
+  field_map:
+  - disable_reason
+- data_reference: '"END_ADVERTISER"'
+  field_map:
+  - end_advertiser
+- data_reference: '"END_ADVERTISER_NAME"'
+  field_map:
+  - end_advertiser_name
+- data_reference: '"HAS_MIGRATED_PERMISSIONS"'
+  field_map:
+  - has_migrated_permissions
+- data_reference: '"IO_NUMBER"'
+  field_map:
+  - io_number
+- data_reference: '"IS_ATTRIBUTION_SPEC_SYSTEM_DEFAULT"'
+  field_map:
+  - is_attribution_spec_system_default
+- data_reference: '"IS_DIRECT_DEALS_ENABLED"'
+  field_map:
+  - is_direct_deals_enabled
+- data_reference: '"IS_NOTIFICATIONS_ENABLED"'
+  field_map:
+  - is_notifications_enabled
+- data_reference: '"IS_PERSONAL"'
+  field_map:
+  - is_personal
+- data_reference: '"IS_PREPAY_ACCOUNT"'
+  field_map:
+  - is_prepay_account
+- data_reference: '"IS_TAX_ID_REQUIRED"'
+  field_map:
+  - is_tax_id_required
+- data_reference: '"MEDIA_AGENCY"'
+  field_map:
+  - media_agency
+- data_reference: '"MIN_CAMPAIGN_GROUP_SPEND_CAP"'
+  field_map:
+  - min_campaign_group_spend_cap
+- data_reference: '"MIN_DAILY_BUDGET"'
+  field_map:
+  - min_daily_budget
+- data_reference: '"NEXT_BILL_DATE"'
+  field_map:
+  - next_bill_date
+- data_reference: '"OFFSITE_PIXELS_TOS_ACCEPTED"'
+  field_map:
+  - offsite_pixels_tos_accepted
+- data_reference: '"OWNER"'
+  field_map:
+  - owner
+- data_reference: '"PARTNER"'
+  field_map:
+  - partner
+- data_reference: '"SALESFORCE_INVOICE_GROUP_ID"'
+  field_map:
+  - salesforce_invoice_group_id
+- data_reference: '"SPEND_CAP"'
+  field_map:
+  - spend_cap
+- data_reference: '"TAX_ID"'
+  field_map:
+  - tax_id
+- data_reference: '"TAX_ID_STATUS"'
+  field_map:
+  - tax_id_status
+- data_reference: '"TAX_ID_TYPE"'
+  field_map:
+  - tax_id_type
+- data_reference: '"TIMEZONE_ID"'
+  field_map:
+  - timezone_id
+- data_reference: '"TIMEZONE_NAME"'
+  field_map:
+  - timezone_name
+- data_reference: '"TIMEZONE_OFFSET_HOURS_UTC"'
+  field_map:
+  - timezone_offset_hours_utc
+- data_reference: '"TOS_ACCEPTED_CUSTOM_AUDIENCE_TOS"'
+  field_map:
+  - tos_accepted_custom_audience_tos
+- data_reference: '"_FIVETRAN_ID"'
+  field_map:
+  - _fivetran_id
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- account_id
+joins: []
+model_name: facebook_views.entity_accounts

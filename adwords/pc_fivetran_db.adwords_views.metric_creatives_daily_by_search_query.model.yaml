@@ -1,0 +1,120 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.ADWORDS_VIEWS.METRIC_CREATIVES_DAILY_BY_SEARCH_QUERY
+fields:
+- data_reference: '"ABSOLUTE_TOP_IMPRESSION_PERCENTAGE"'
+  field_map:
+  - absolute_top_impression_percentage
+- data_reference: '"AD_FORMAT"'
+  field_map:
+  - ad_format
+- data_reference: '"AD_GROUP_ID"'
+  field_map:
+  - ad_group_id
+- data_reference: '"AD_NETWORK_TYPE_1"'
+  field_map:
+  - ad_network_type_1
+- data_reference: '"AD_NETWORK_TYPE_2"'
+  field_map:
+  - ad_network_type_2
+- data_reference: '"ALL_CONVERSIONS"'
+  field_map:
+  - all_conversions
+- data_reference: '"ALL_CONVERSION_VALUE"'
+  field_map:
+  - all_conversion_value
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CLICKS"'
+  field_map:
+  - clicks
+- data_reference: '"CONVERSIONS"'
+  field_map:
+  - conversions
+- data_reference: '"CONVERSION_VALUE"'
+  field_map:
+  - conversion_value
+- data_reference: '"COST"'
+  field_map:
+  - cost
+- data_reference: '"CREATIVE_ID"'
+  field_map:
+  - creative_id
+- data_reference: '"CROSS_DEVICE_CONVERSIONS"'
+  field_map:
+  - cross_device_conversions
+- data_reference: '"CUSTOMER_ID"'
+  field_map:
+  - customer_id
+- data_reference: '"DATE"'
+  field_map:
+  - date
+- data_reference: '"ENGAGEMENTS"'
+  field_map:
+  - engagements
+- data_reference: '"IMPRESSIONS"'
+  field_map:
+  - impressions
+- data_reference: '"INTERACTIONS"'
+  field_map:
+  - interactions
+- data_reference: '"KEYWORD_ID"'
+  field_map:
+  - keyword_id
+- data_reference: '"KEYWORD_TEXT_MATCHING_QUERY"'
+  field_map:
+  - keyword_text_matching_query
+- data_reference: '"SEARCH_TERM"'
+  field_map:
+  - search_term
+- data_reference: '"VALUE_PER_ALL_CONVERSION"'
+  field_map:
+  - value_per_all_conversion
+- data_reference: '"VALUE_PER_CONVERSION"'
+  field_map:
+  - value_per_conversion
+- data_reference: '"VIDEO_QUARTILE_100_RATE"'
+  field_map:
+  - video_quartile_100_rate
+- data_reference: '"VIDEO_QUARTILE_25_RATE"'
+  field_map:
+  - video_quartile_25_rate
+- data_reference: '"VIDEO_QUARTILE_50_RATE"'
+  field_map:
+  - video_quartile_50_rate
+- data_reference: '"VIDEO_QUARTILE_75_RATE"'
+  field_map:
+  - video_quartile_75_rate
+- data_reference: '"VIDEO_VIEWS"'
+  field_map:
+  - video_views
+- data_reference: '"VIDEO_VIEW_RATE"'
+  field_map:
+  - video_view_rate
+- data_reference: '"VIEW_THROUGH_CONVERSIONS"'
+  field_map:
+  - view_through_conversions
+- data_reference: '"_FIVETRAN_ID"'
+  field_map:
+  - _fivetran_id
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- customer_id
+- campaign_id
+- ad_group_id
+- date
+- ad_network_type_1
+- ad_network_type_2
+- creative_id
+- keyword_id
+- search_term
+joins:
+- fields:
+  - campaign_id
+  - ad_group_id
+  join_type: left
+  relationship: many_to_one
+  to_model: adwords_views.entity_ad_groups
+model_name: adwords_views.metric_creatives_daily_by_search_query

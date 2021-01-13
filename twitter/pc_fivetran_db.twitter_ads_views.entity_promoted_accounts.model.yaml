@@ -1,0 +1,41 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_PROMOTED_ACCOUNTS
+fields:
+- data_reference: '"APPROVAL_STATUS"'
+  field_map:
+  - approval_status
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DELETED"'
+  field_map:
+  - deleted
+- data_reference: '"ENTITY_STATUS"'
+  field_map:
+  - entity_status
+- data_reference: '"LINE_ITEM_ID"'
+  field_map:
+  - line_item_id
+- data_reference: '"PROMOTED_ACCOUNT_ID"'
+  field_map:
+  - promoted_account_id
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"USER_ID"'
+  field_map:
+  - user_id
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- line_item_id
+- promoted_account_id
+- user_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - line_item_id
+  to_model: twitter_ads_views.entity_line_items
+model_name: twitter_ads_views.entity_promoted_accounts

@@ -1,0 +1,22 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.ADWORDS_VIEWS.ENTITY_REGIONS
+fields:
+- data_reference: '"CANONICAL_NAME"'
+  field_map:
+  - canonical_region_name
+- data_reference: '"COUNTRY_CODE"'
+  field_map:
+  - country_code
+- data_reference: '"PARENT_ID"'
+  field_map:
+  - parent_id
+- data_reference: '"REGION"'
+  field_map:
+  - region
+- data_reference: '"REGION_CRITERIA_ID"'
+  field_map:
+  - region_criteria_id
+identifiers:
+- region_criteria_id
+joins: []
+model_name: adwords_views.entity_regions

@@ -1,0 +1,51 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.GOOGLE_ANALYTICS_VIEWS.AFFINITY_CATEGORIES
+fields:
+- data_reference: '"BOUNCES"'
+  field_map:
+  - bounces
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DATE"'
+  field_map:
+  - date
+- data_reference: '"INTEREST_AFFINITY_CATEGORY"'
+  field_map:
+  - interest_affinity_category
+- data_reference: '"NEW_USERS"'
+  field_map:
+  - new_users
+- data_reference: '"NEW_VISITS"'
+  field_map:
+  - new_visits
+- data_reference: '"PAGEVIEWS"'
+  field_map:
+  - pageviews
+- data_reference: '"PERCENT_NEW_SESSIONS"'
+  field_map:
+  - percent_new_sessions
+- data_reference: '"PROFILE_ID"'
+  field_map:
+  - profile_id
+- data_reference: '"SESSIONS"'
+  field_map:
+  - sessions
+- data_reference: '"SESSION_DURATION"'
+  field_map:
+  - session_duration
+- data_reference: '"TRANSACTIONS"'
+  field_map:
+  - transactions
+- data_reference: '"TRANSACTION_REVENUE"'
+  field_map:
+  - transaction_revenue
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"USERS"'
+  field_map:
+  - users
+identifiers: []
+joins: []
+model_name: google_analytics_views.affinity_categories

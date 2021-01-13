@@ -1,0 +1,164 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.ADWORDS_VIEWS.ENTITY_CAMPAIGNS
+fields:
+- data_reference: '"ADVERTISING_CHANNEL_SUBTYPE"'
+  field_map:
+  - advertising_channel_subtype
+- data_reference: '"ADVERTISING_CHANNEL_TYPE"'
+  field_map:
+  - advertising_channel_type
+  - publisher
+- data_reference: '"AD_SERVING_OPTIMIZATION_STATUS"'
+  field_map:
+  - ad_serving_optimization_status
+- data_reference: '"BASE_CAMPAIGN_ID"'
+  field_map:
+  - base_campaign_id
+- data_reference: '"BIDDING_STRATEGY_BID_CEILING"'
+  field_map:
+  - bidding_strategy_bid_ceiling
+- data_reference: '"BIDDING_STRATEGY_BID_CHANGES_FOR_RAISES_ONLY"'
+  field_map:
+  - bidding_strategy_bid_changes_for_raises_only
+- data_reference: '"BIDDING_STRATEGY_BID_FLOOR"'
+  field_map:
+  - bidding_strategy_bid_floor
+- data_reference: '"BIDDING_STRATEGY_BID_MODIFIER"'
+  field_map:
+  - bidding_strategy_bid_modifier
+- data_reference: '"BIDDING_STRATEGY_COMPETITOR_DOMAIN"'
+  field_map:
+  - bidding_strategy_competitor_domain
+- data_reference: '"BIDDING_STRATEGY_CPA_BID_AMOUNT"'
+  field_map:
+  - bidding_strategy_cpa_bid_amount
+- data_reference: '"BIDDING_STRATEGY_CPC_BID_AMOUNT"'
+  field_map:
+  - bidding_strategy_cpc_bid_amount
+- data_reference: '"BIDDING_STRATEGY_CPM_BID_AMOUNT"'
+  field_map:
+  - bidding_strategy_cpm_bid_amount
+- data_reference: '"BIDDING_STRATEGY_ENHANCED_CPC_ENABLED"'
+  field_map:
+  - bidding_strategy_enhanced_cpc_enabled
+- data_reference: '"BIDDING_STRATEGY_ID"'
+  field_map:
+  - bidding_strategy_id
+- data_reference: '"BIDDING_STRATEGY_MAX_CPC_BID_CEILING"'
+  field_map:
+  - bidding_strategy_max_cpc_bid_ceiling
+- data_reference: '"BIDDING_STRATEGY_MAX_CPC_BID_FLOOR"'
+  field_map:
+  - bidding_strategy_max_cpc_bid_floor
+- data_reference: '"BIDDING_STRATEGY_NAME"'
+  field_map:
+  - bidding_strategy_name
+- data_reference: '"BIDDING_STRATEGY_RAISE_BID_WHEN_BUDGET_CONSTRAINED"'
+  field_map:
+  - bidding_strategy_raise_bid_when_budget_constrained
+- data_reference: '"BIDDING_STRATEGY_RAISE_BID_WHEN_LOW_QUALITY_SCORE"'
+  field_map:
+  - bidding_strategy_raise_bid_when_low_quality_score
+- data_reference: '"BIDDING_STRATEGY_SCHEME_TYPE"'
+  field_map:
+  - bidding_strategy_scheme_type
+- data_reference: '"BIDDING_STRATEGY_SOURCE"'
+  field_map:
+  - bidding_strategy_source
+- data_reference: '"BIDDING_STRATEGY_SPEND_TARGET"'
+  field_map:
+  - bidding_strategy_spend_target
+- data_reference: '"BIDDING_STRATEGY_STRATEGY_GOAL"'
+  field_map:
+  - bidding_strategy_strategy_goal
+- data_reference: '"BIDDING_STRATEGY_TARGET_CPA"'
+  field_map:
+  - bidding_strategy_target_cpa
+- data_reference: '"BIDDING_STRATEGY_TARGET_OUTRANK_SHARE"'
+  field_map:
+  - bidding_strategy_target_outrank_share
+- data_reference: '"BIDDING_STRATEGY_TARGET_ROAS"'
+  field_map:
+  - bidding_strategy_target_roas
+- data_reference: '"BIDDING_STRATEGY_TARGET_ROAS_OVERRIDE"'
+  field_map:
+  - bidding_strategy_target_roas_override
+- data_reference: '"BIDDING_STRATEGY_TYPE"'
+  field_map:
+  - bidding_strategy_type
+- data_reference: '"BIDDING_STRATEGY_VIEWABLE_CPM_ENABLED"'
+  field_map:
+  - bidding_strategy_viewable_cpm_enabled
+- data_reference: '"CAMPAIGN_END_DATE"'
+  field_map:
+  - campaign_end_date
+- data_reference: '"CAMPAIGN_GROUP_ID"'
+  field_map:
+  - campaign_group_id
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CAMPAIGN_NAME"'
+  field_map:
+  - campaign_name
+- data_reference: '"CAMPAIGN_SERVING_STATUS"'
+  field_map:
+  - campaign_serving_status
+- data_reference: '"CAMPAIGN_START_DATE"'
+  field_map:
+  - campaign_start_date
+- data_reference: '"CAMPAIGN_STATUS"'
+  field_map:
+  - campaign_status
+- data_reference: '"CAMPAIGN_TRIAL_TYPE"'
+  field_map:
+  - campaign_trial_type
+- data_reference: '"CUSTOMER_ID"'
+  field_map:
+  - customer_id
+- data_reference: '"FINAL_URL_SUFFIX"'
+  field_map:
+  - final_url_suffix
+- data_reference: '"FREQUENCY_CAP_IMPRESSIONS"'
+  field_map:
+  - frequency_cap_impressions
+- data_reference: '"FREQUENCY_CAP_LEVEL"'
+  field_map:
+  - frequency_cap_level
+- data_reference: '"FREQUENCY_CAP_TIME_UNIT"'
+  field_map:
+  - frequency_cap_time_unit
+- data_reference: '"NETWORK_SETTING_TARGET_CONTENT_NETWORK"'
+  field_map:
+  - network_setting_target_content_network
+- data_reference: '"NETWORK_SETTING_TARGET_GOOGLE_SEARCH"'
+  field_map:
+  - network_setting_target_google_search
+- data_reference: '"NETWORK_SETTING_TARGET_PARTNER_SEARCH_NETWORK"'
+  field_map:
+  - network_setting_target_partner_search_network
+- data_reference: '"NETWORK_SETTING_TARGET_SEARCH_NETWORK"'
+  field_map:
+  - network_setting_target_search_network
+- data_reference: '"TRACKING_URL_TEMPLATE"'
+  field_map:
+  - tracking_url_template
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"VANITY_PHARMA_DISPLAY_URL_MODE"'
+  field_map:
+  - vanity_pharma_display_url_mode
+- data_reference: '"VANITY_PHARMA_TEXT"'
+  field_map:
+  - vanity_pharma_text
+identifiers:
+- customer_id
+- campaign_id
+joins:
+- fields:
+  - customer_id
+  join_type: left
+  relationship: many_to_one
+  to_model: adwords_views.entity_accounts
+model_name: adwords_views.entity_campaigns

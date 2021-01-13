@@ -1,0 +1,17 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.DOUBLECLICK_CAMPAIGN_MANAGER_VIEWS.ENTITY_ADVERTISERS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ADVERTISER"'
+  field_map:
+  - advertiser
+- data_reference: '"ADVERTISER_ID"'
+  field_map:
+  - advertiser_id
+identifiers:
+- account_id
+- advertiser_id
+joins: []
+model_name: doubleclick_campaign_manager_views.entity_advertisers

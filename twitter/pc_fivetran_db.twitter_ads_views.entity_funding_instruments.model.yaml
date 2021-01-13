@@ -1,0 +1,64 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_FUNDING_INSTRUMENTS
+fields:
+- data_reference: '"ABLE_TO_FUND"'
+  field_map:
+  - able_to_fund
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"CREDIT_LIMIT_LOCAL_MICRO"'
+  field_map:
+  - credit_limit_local_micro
+- data_reference: '"CREDIT_REMAINING_LOCAL_MICRO"'
+  field_map:
+  - credit_remaining_local_micro
+- data_reference: '"CURRENCY"'
+  field_map:
+  - currency
+- data_reference: '"DELETED"'
+  field_map:
+  - deleted
+- data_reference: '"DESCRIPTION"'
+  field_map:
+  - description
+- data_reference: '"END_TIME"'
+  field_map:
+  - end_time
+- data_reference: '"ENTITY_STATUS"'
+  field_map:
+  - entity_status
+- data_reference: '"FUNDED_AMOUNT_LOCAL_MICRO"'
+  field_map:
+  - funded_amount_local_micro
+- data_reference: '"FUNDING_INSTRUMENT_ID"'
+  field_map:
+  - funding_instrument_id
+- data_reference: '"FUNDING_INSTRUMENT_TYPE"'
+  field_map:
+  - funding_instrument_type
+- data_reference: '"IO_HEADER"'
+  field_map:
+  - io_header
+- data_reference: '"START_TIME"'
+  field_map:
+  - start_time
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- account_id
+- funding_instrument_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  to_model: twitter_ads_views.entity_accounts
+model_name: twitter_ads_views.entity_funding_instruments

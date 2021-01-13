@@ -1,0 +1,34 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.LINKEDIN_VIEWS.ENTITY_ACCOUNTS
+fields:
+- data_reference: '"CURRENCY"'
+  field_map:
+  - currency
+- data_reference: '"ID"'
+  field_map:
+  - account_id
+- data_reference: '"NAME"'
+  field_map:
+  - account_name
+- data_reference: '"PLATFORM_CREATED_AT"'
+  field_map:
+  - platform_created_at
+- data_reference: '"PLATFORM_UPDATED_AT"'
+  field_map:
+  - platform_updated_at
+- data_reference: '"PROCESSED_AT"'
+  field_map:
+  - processed_at
+- data_reference: '"REFERENCE"'
+  field_map:
+  - reference
+- data_reference: '"STATUS"'
+  field_map:
+  - status
+- data_reference: '"TYPE"'
+  field_map:
+  - account_type
+identifiers:
+- account_id
+joins: []
+model_name: linkedin_views.entity_accounts

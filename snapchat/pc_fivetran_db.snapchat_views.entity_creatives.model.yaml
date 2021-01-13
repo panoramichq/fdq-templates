@@ -1,0 +1,109 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.SNAPCHAT_VIEWS.ENTITY_CREATIVES
+fields:
+- data_reference: '"AD_ACCOUNT_ID"'
+  field_map:
+  - ad_account_id
+- data_reference: '"AD_PRODUCT"'
+  field_map:
+  - ad_product
+- data_reference: '"APP_INSTALL_ANDROID_APP_URL"'
+  field_map:
+  - app_install_android_app_url
+- data_reference: '"APP_INSTALL_APP_NAME"'
+  field_map:
+  - app_install_app_name
+- data_reference: '"APP_INSTALL_ICON_MEDIA_ID"'
+  field_map:
+  - app_install_icon_media_id
+- data_reference: '"APP_INSTALL_IOS_APP_ID"'
+  field_map:
+  - app_install_ios_app_id
+- data_reference: '"ATTACHMENT_TYPE"'
+  field_map:
+  - attachment_type
+- data_reference: '"BRAND_NAME"'
+  field_map:
+  - brand_name
+- data_reference: '"CALL_TO_ACTION"'
+  field_map:
+  - call_to_action
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"CREATIVE_ID"'
+  field_map:
+  - creative_id
+- data_reference: '"CREATIVE_NAME"'
+  field_map:
+  - creative_name
+- data_reference: '"CREATIVE_TYPE"'
+  field_map:
+  - creative_type
+- data_reference: '"DEEP_LINK_ANDROID_APP_URL"'
+  field_map:
+  - deep_link_android_app_url
+- data_reference: '"DEEP_LINK_APP_NAME"'
+  field_map:
+  - deep_link_app_name
+- data_reference: '"DEEP_LINK_ICON_MEDIA_ID"'
+  field_map:
+  - deep_link_icon_media_id
+- data_reference: '"DEEP_LINK_IOS_APP_ID"'
+  field_map:
+  - deep_link_ios_app_id
+- data_reference: '"DEEP_LINK_URI"'
+  field_map:
+  - deep_link_uri
+- data_reference: '"HEADLINE"'
+  field_map:
+  - headline
+- data_reference: '"LONGFORM_VIDEO_MEDIA_ID"'
+  field_map:
+  - longform_video_media_id
+- data_reference: '"PACKAGING_STATUS"'
+  field_map:
+  - packaging_status
+- data_reference: '"PLAYBACK_TYPE"'
+  field_map:
+  - playback_type
+- data_reference: '"PREVIEW_CREATIVE_ID"'
+  field_map:
+  - preview_creative_id
+- data_reference: '"REVIEW_STATUS"'
+  field_map:
+  - review_status
+- data_reference: '"SHAREABLE"'
+  field_map:
+  - shareable
+- data_reference: '"TOP_SNAP_CROP_POSITION"'
+  field_map:
+  - top_snap_crop_position
+- data_reference: '"TOP_SNAP_MEDIA_ID"'
+  field_map:
+  - top_snap_media_id
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"WEB_VIEW_ALLOW_SNAP_JAVASCRIPT_SDK"'
+  field_map:
+  - web_view_allow_snap_javascript_sdk
+- data_reference: '"WEB_VIEW_BLOCK_PRELOAD"'
+  field_map:
+  - web_view_block_preload
+- data_reference: '"WEB_VIEW_URL"'
+  field_map:
+  - web_view_url
+- data_reference: '"WEB_VIEW_USE_IMMERSIVE_MODE"'
+  field_map:
+  - web_view_use_immersive_mode
+identifiers:
+- ad_account_id
+- creative_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - ad_account_id
+  to_model: snapchat_views.entity_accounts
+model_name: snapchat_views.entity_creatives

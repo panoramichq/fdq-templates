@@ -1,0 +1,73 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.BING_ADS_VIEWS.ENTITY_AD_GROUPS
+fields:
+- data_reference: '"AD_ROTATION"'
+  field_map:
+  - ad_rotation
+- data_reference: '"BID_ADJUSTMENT"'
+  field_map:
+  - bid_adjustment
+- data_reference: '"BID_BOOST_VALUE"'
+  field_map:
+  - bid_boost_value
+- data_reference: '"BID_OPTION"'
+  field_map:
+  - bid_option
+- data_reference: '"BID_STRATEGY_TYPE"'
+  field_map:
+  - bid_strategy_type
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CPC_BID"'
+  field_map:
+  - cpc_bid
+- data_reference: '"END_DATE"'
+  field_map:
+  - end_date
+- data_reference: '"ID"'
+  field_map:
+  - ad_group_id
+- data_reference: '"INHERITED_BID_STRATEGY_TYPE"'
+  field_map:
+  - inherited_bid_strategy_type
+- data_reference: '"LANGUAGE"'
+  field_map:
+  - language
+- data_reference: '"MAXIMUM_BID"'
+  field_map:
+  - maximum_bid
+- data_reference: '"MODIFIED_TIME"'
+  field_map:
+  - modified_time
+- data_reference: '"NAME"'
+  field_map:
+  - ad_group_name
+- data_reference: '"NETWORK_DISTRIBUTION"'
+  field_map:
+  - network_distribution
+- data_reference: '"PRIVACY_STATUS"'
+  field_map:
+  - privacy_status
+- data_reference: '"START_DATE"'
+  field_map:
+  - start_date
+- data_reference: '"STATUS"'
+  field_map:
+  - ad_group_status
+- data_reference: '"TARGET_SETTING"'
+  field_map:
+  - target_setting
+- data_reference: '"TRACKING_TEMPLATE"'
+  field_map:
+  - tracking_template
+identifiers:
+- campaign_id
+- ad_group_id
+joins:
+- fields:
+  - campaign_id
+  join_type: left
+  relationship: many_to_one
+  to_model: bing_ads_views.entity_campaigns
+model_name: bing_ads_views.entity_ad_groups

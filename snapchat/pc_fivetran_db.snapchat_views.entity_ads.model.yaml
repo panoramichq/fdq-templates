@@ -1,0 +1,49 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.SNAPCHAT_VIEWS.ENTITY_ADS
+fields:
+- data_reference: '"AD_ID"'
+  field_map:
+  - ad_id
+- data_reference: '"AD_NAME"'
+  field_map:
+  - ad_name
+- data_reference: '"AD_SQUAD_ID"'
+  field_map:
+  - ad_squad_id
+- data_reference: '"AD_TYPE"'
+  field_map:
+  - ad_type
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"CREATIVE_ID"'
+  field_map:
+  - creative_id
+- data_reference: '"REVIEW_STATUS"'
+  field_map:
+  - review_status
+- data_reference: '"REVIEW_STATUS_REASONS"'
+  field_map:
+  - review_status_reasons
+- data_reference: '"STATUS"'
+  field_map:
+  - ad_status
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+identifiers:
+- ad_id
+- ad_squad_id
+- creative_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - ad_squad_id
+  to_model: snapchat_views.entity_ad_squads
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - creative_id
+  to_model: snapchat_views.entity_creatives
+model_name: snapchat_views.entity_ads

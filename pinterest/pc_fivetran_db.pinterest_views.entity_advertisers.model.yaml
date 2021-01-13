@@ -1,0 +1,25 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.PINTEREST_VIEWS.ENTITY_ADVERTISERS
+fields:
+- data_reference: '"COUNTRY"'
+  field_map:
+  - advertiser_country
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"CURRENCY"'
+  field_map:
+  - advertiser_currency
+- data_reference: '"ID"'
+  field_map:
+  - advertiser_id
+- data_reference: '"NAME"'
+  field_map:
+  - advertiser_name
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+identifiers:
+- advertiser_id
+joins: []
+model_name: pinterest_views.entity_advertisers

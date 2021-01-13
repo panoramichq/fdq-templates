@@ -1,0 +1,126 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.GOOGLE_ANALYTICS_VIEWS.CAMPAIGN_CUSTOM_GOALS
+fields:
+- data_reference: '"CAMPAIGN"'
+  field_map:
+  - campaign
+- data_reference: '"CHANNEL_GROUPING"'
+  field_map:
+  - channel_grouping
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DATE"'
+  field_map:
+  - date
+- data_reference: '"GOAL_10_COMPLETIONS"'
+  field_map:
+  - goal_10_completions
+- data_reference: '"GOAL_10_VALUE"'
+  field_map:
+  - goal_10_value
+- data_reference: '"GOAL_11_COMPLETIONS"'
+  field_map:
+  - goal_11_completions
+- data_reference: '"GOAL_11_VALUE"'
+  field_map:
+  - goal_11_value
+- data_reference: '"GOAL_12_COMPLETIONS"'
+  field_map:
+  - goal_12_completions
+- data_reference: '"GOAL_12_VALUE"'
+  field_map:
+  - goal_12_value
+- data_reference: '"GOAL_13_COMPLETIONS"'
+  field_map:
+  - goal_13_completions
+- data_reference: '"GOAL_13_VALUE"'
+  field_map:
+  - goal_13_value
+- data_reference: '"GOAL_14_COMPLETIONS"'
+  field_map:
+  - goal_14_completions
+- data_reference: '"GOAL_14_VALUE"'
+  field_map:
+  - goal_14_value
+- data_reference: '"GOAL_15_COMPLETIONS"'
+  field_map:
+  - goal_15_completions
+- data_reference: '"GOAL_15_VALUE"'
+  field_map:
+  - goal_15_value
+- data_reference: '"GOAL_16_COMPLETIONS"'
+  field_map:
+  - goal_16_completions
+- data_reference: '"GOAL_16_VALUE"'
+  field_map:
+  - goal_16_value
+- data_reference: '"GOAL_1_COMPLETIONS"'
+  field_map:
+  - goal_1_completions
+- data_reference: '"GOAL_1_VALUE"'
+  field_map:
+  - goal_1_value
+- data_reference: '"GOAL_2_COMPLETIONS"'
+  field_map:
+  - goal_2_completions
+- data_reference: '"GOAL_2_VALUE"'
+  field_map:
+  - goal_2_value
+- data_reference: '"GOAL_3_COMPLETIONS"'
+  field_map:
+  - goal_3_completions
+- data_reference: '"GOAL_3_VALUE"'
+  field_map:
+  - goal_3_value
+- data_reference: '"GOAL_4_COMPLETIONS"'
+  field_map:
+  - goal_4_completions
+- data_reference: '"GOAL_4_VALUE"'
+  field_map:
+  - goal_4_value
+- data_reference: '"GOAL_5_COMPLETIONS"'
+  field_map:
+  - goal_5_completions
+- data_reference: '"GOAL_5_VALUE"'
+  field_map:
+  - goal_5_value
+- data_reference: '"GOAL_6_COMPLETIONS"'
+  field_map:
+  - goal_6_completions
+- data_reference: '"GOAL_6_VALUE"'
+  field_map:
+  - goal_6_value
+- data_reference: '"GOAL_7_COMPLETIONS"'
+  field_map:
+  - goal_7_completions
+- data_reference: '"GOAL_7_VALUE"'
+  field_map:
+  - goal_7_value
+- data_reference: '"GOAL_8_COMPLETIONS"'
+  field_map:
+  - goal_8_completions
+- data_reference: '"GOAL_8_VALUE"'
+  field_map:
+  - goal_8_value
+- data_reference: '"GOAL_9_COMPLETIONS"'
+  field_map:
+  - goal_9_completions
+- data_reference: '"GOAL_9_VALUE"'
+  field_map:
+  - goal_9_value
+- data_reference: '"MEDIUM"'
+  field_map:
+  - medium
+- data_reference: '"PROFILE_ID"'
+  field_map:
+  - profile_id
+- data_reference: '"SESSIONS"'
+  field_map:
+  - sessions
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+identifiers: []
+joins: []
+model_name: google_analytics_views.campaign_custom_goals

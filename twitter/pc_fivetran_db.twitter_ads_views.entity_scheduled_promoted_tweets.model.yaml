@@ -1,0 +1,43 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_SCHEDULED_PROMOTED_TWEETS
+fields:
+- data_reference: '"CREATED_AT"'
+  field_map:
+  - created_at
+- data_reference: '"DELETED"'
+  field_map:
+  - deleted
+- data_reference: '"LINE_ITEM_ID"'
+  field_map:
+  - line_item_id
+- data_reference: '"SCHEDULED_PROMOTED_TWEET_ID"'
+  field_map:
+  - scheduled_promoted_tweet_id
+- data_reference: '"SCHEDULED_TWEET_ID"'
+  field_map:
+  - scheduled_tweet_id
+- data_reference: '"TWEET_ID"'
+  field_map:
+  - tweet_id
+- data_reference: '"UPDATED_AT"'
+  field_map:
+  - updated_at
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- line_item_id
+- scheduled_tweet_id
+- tweet_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - line_item_id
+  to_model: twitter_ads_views.entity_line_items
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - tweet_id
+  to_model: twitter_ads_views.entity_tweets
+model_name: twitter_ads_views.entity_scheduled_promoted_tweets

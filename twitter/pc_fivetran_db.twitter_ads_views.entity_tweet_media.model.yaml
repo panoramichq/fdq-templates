@@ -1,0 +1,51 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_TWEET_MEDIA
+fields:
+- data_reference: '"DISPLAY_URL"'
+  field_map:
+  - display_url
+- data_reference: '"EXPANDED_URL"'
+  field_map:
+  - expanded_url
+- data_reference: '"MEDIA_ID"'
+  field_map:
+  - media_id
+- data_reference: '"MEDIA_INDICES"'
+  field_map:
+  - media_indices
+- data_reference: '"MEDIA_TYPE"'
+  field_map:
+  - media_type
+- data_reference: '"MEDIA_URL"'
+  field_map:
+  - media_url
+- data_reference: '"MEDIA_URL_HTTPS"'
+  field_map:
+  - media_url_https
+- data_reference: '"SIZES"'
+  field_map:
+  - sizes
+- data_reference: '"TWEET_ID"'
+  field_map:
+  - tweet_id
+- data_reference: '"URL"'
+  field_map:
+  - url
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- media_id
+- tweet_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - media_id
+  to_model: twitter_ads_views.entity_account_media
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - tweet_id
+  to_model: twitter_ads_views.entity_tweets
+model_name: twitter_ads_views.entity_tweet_media

@@ -1,0 +1,31 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.TWITTER_ADS_VIEWS.ENTITY_TWEET_USER_MENTIONS
+fields:
+- data_reference: '"SCREEN_NAME"'
+  field_map:
+  - screen_name
+- data_reference: '"TWEET_ID"'
+  field_map:
+  - tweet_id
+- data_reference: '"USER_ID"'
+  field_map:
+  - user_id
+- data_reference: '"USER_INDICES"'
+  field_map:
+  - user_indices
+- data_reference: '"USER_NAME"'
+  field_map:
+  - user_name
+- data_reference: '"_FIVETRAN_SYNCED"'
+  field_map:
+  - _fivetran_synced
+identifiers:
+- tweet_id
+- user_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - tweet_id
+  to_model: twitter_ads_views.entity_tweets
+model_name: twitter_ads_views.entity_tweet_user_mentions

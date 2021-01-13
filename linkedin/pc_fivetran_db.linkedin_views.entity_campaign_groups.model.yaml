@@ -1,0 +1,43 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.LINKEDIN_VIEWS.ENTITY_CAMPAIGN_GROUPS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"BACKFILLED"'
+  field_map:
+  - backfilled
+- data_reference: '"ID"'
+  field_map:
+  - campaign_group_id
+- data_reference: '"NAME"'
+  field_map:
+  - campaign_group_name
+- data_reference: '"PLATFORM_CREATED_AT"'
+  field_map:
+  - platform_created_at
+- data_reference: '"PLATFORM_UPDATED_AT"'
+  field_map:
+  - platform_updated_at
+- data_reference: '"PROCESSED_AT"'
+  field_map:
+  - processed_at
+- data_reference: '"RUN_SCHEDULE_END"'
+  field_map:
+  - run_schedule_end
+- data_reference: '"RUN_SCHEDULE_START"'
+  field_map:
+  - run_schedule_start
+- data_reference: '"STATUS"'
+  field_map:
+  - status
+identifiers:
+- account_id
+- campaign_group_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - account_id
+  to_model: linkedin_views.entity_accounts
+model_name: linkedin_views.entity_campaign_groups

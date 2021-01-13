@@ -1,0 +1,45 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.DOUBLECLICK_CAMPAIGN_MANAGER_VIEWS.ENTITY_ADS
+fields:
+- data_reference: '"ACCOUNT_ID"'
+  field_map:
+  - account_id
+- data_reference: '"ADVERTISER_ID"'
+  field_map:
+  - advertiser_id
+- data_reference: '"AD_ID"'
+  field_map:
+  - ad_id
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"PLACEMENT_ID"'
+  field_map:
+  - placement_id
+- data_reference: '"SITE"'
+  field_map:
+  - site
+- data_reference: '"SITE_ID"'
+  field_map:
+  - site_id
+- data_reference: '"SITE_KEYNAME"'
+  field_map:
+  - site_keyname
+identifiers:
+- account_id
+- advertiser_id
+- ad_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - advertiser_id
+  - placement_id
+  to_model: doubleclick_campaign_manager_views.entity_placements
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - advertiser_id
+  - campaign_id
+  to_model: doubleclick_campaign_manager_views.entity_campaigns
+model_name: doubleclick_campaign_manager_views.entity_ads

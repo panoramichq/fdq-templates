@@ -1,0 +1,124 @@
+api_version: v1
+data_source: PC_FIVETRAN_DB.LINKEDIN_VIEWS.ENTITY_CREATIVES
+fields:
+- data_reference: '"CALL_TO_ACTION_LABEL_TYPE"'
+  field_map:
+  - call_to_action_label_type
+- data_reference: '"CALL_TO_ACTION_TARGET"'
+  field_map:
+  - call_to_action_target
+- data_reference: '"CAMPAIGN_ID"'
+  field_map:
+  - campaign_id
+- data_reference: '"CLICK_URI"'
+  field_map:
+  - click_uri
+- data_reference: '"FOLLOW_COMPANY_CALL_TO_ACTION"'
+  field_map:
+  - follow_company_call_to_action
+- data_reference: '"FOLLOW_COMPANY_ORGANIZATION_LOGO"'
+  field_map:
+  - follow_company_organization_logo
+- data_reference: '"FOLLOW_COMPANY_ORGANIZATION_NAME"'
+  field_map:
+  - follow_company_organization_name
+- data_reference: '"ID"'
+  field_map:
+  - creative_id
+- data_reference: '"JOBS_COMPANY_NAME"'
+  field_map:
+  - jobs_company_name
+- data_reference: '"JOBS_LOGO"'
+  field_map:
+  - jobs_logo
+- data_reference: '"JOBS_ORGANIZATION"'
+  field_map:
+  - jobs_organization
+- data_reference: '"PLATFORM_CREATED_AT"'
+  field_map:
+  - platform_created_at
+- data_reference: '"PLATFORM_UPDATED_AT"'
+  field_map:
+  - platform_updated_at
+- data_reference: '"PROCESSED_AT"'
+  field_map:
+  - processed_at
+- data_reference: '"REFERENCE"'
+  field_map:
+  - reference
+- data_reference: '"REVIEW_STATUS"'
+  field_map:
+  - review_status
+- data_reference: '"SPONSORED_IN_MAIL_CONTENT"'
+  field_map:
+  - sponsored_in_mail_content
+- data_reference: '"SPONSORED_UPDATE_ACTIVITY"'
+  field_map:
+  - sponsored_update_activity
+- data_reference: '"SPONSORED_UPDATE_CAROUSEL_ACTIVITY"'
+  field_map:
+  - sponsored_update_carousel_activity
+- data_reference: '"SPONSORED_UPDATE_CAROUSEL_DIRECT_SPONSORED_CONTENT"'
+  field_map:
+  - sponsored_update_carousel_direct_sponsored_content
+- data_reference: '"SPONSORED_UPDATE_CAROUSEL_SHARE"'
+  field_map:
+  - sponsored_update_carousel_share
+- data_reference: '"SPONSORED_UPDATE_DIRECT_SPONSORED_CONTENT"'
+  field_map:
+  - sponsored_update_direct_sponsored_content
+- data_reference: '"SPONSORED_UPDATE_SHARE"'
+  field_map:
+  - sponsored_update_share
+- data_reference: '"SPONSORED_VIDEO_MEDIA_ASSET"'
+  field_map:
+  - sponsored_video_media_asset
+- data_reference: '"SPONSORED_VIDEO_USER_GENERATED_CONTENT_POST"'
+  field_map:
+  - sponsored_video_user_generated_content_post
+- data_reference: '"SPOTLIGHT_CALL_TO_ACTION"'
+  field_map:
+  - spotlight_call_to_action
+- data_reference: '"SPOTLIGHT_CUSTOM_BACKGROUND"'
+  field_map:
+  - spotlight_custom_background
+- data_reference: '"SPOTLIGHT_DESCRIPTION"'
+  field_map:
+  - spotlight_description
+- data_reference: '"SPOTLIGHT_FORUM_NAME"'
+  field_map:
+  - spotlight_forum_name
+- data_reference: '"SPOTLIGHT_HEADLINE"'
+  field_map:
+  - spotlight_headline
+- data_reference: '"SPOTLIGHT_LOGO"'
+  field_map:
+  - spotlight_logo
+- data_reference: '"SPOTLIGHT_SHOW_MEMBER_PROFILE_PHOTO"'
+  field_map:
+  - spotlight_show_member_profile_photo
+- data_reference: '"STATUS"'
+  field_map:
+  - status
+- data_reference: '"TEXT_AD_TEXT"'
+  field_map:
+  - text_ad_text
+- data_reference: '"TEXT_AD_TITLE"'
+  field_map:
+  - text_ad_title
+- data_reference: '"TYPE"'
+  field_map:
+  - creative_type
+- data_reference: '"VERSION_TAG"'
+  field_map:
+  - version_tag
+identifiers:
+- campaign_id
+- creative_id
+joins:
+- join_type: left
+  relationship: many_to_one
+  fields:
+  - campaign_id
+  to_model: linkedin_views.entity_campaigns
+model_name: linkedin_views.entity_creatives
